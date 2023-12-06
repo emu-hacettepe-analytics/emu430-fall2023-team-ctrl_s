@@ -1,9 +1,12 @@
 ---
-title: "Ctrl_S"
-sidebar: false 
+---sidebar: false 
 ---
 
-***Mobil Market Dynamics: Global and Turkey Market Analysis***
+![](images/text (2).gif){fig-align="center" width="266"}
+
+![](images/text (8).gif){fig-align="center"}
+
+![](images/text (7)-01.gif){fig-align="center"}
 
 # Team Members
 
