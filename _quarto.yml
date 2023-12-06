@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "xxx' Project Lab"
+  title: "Ctrl_S Project Page"
   navbar:
     search: true
     left:
@@ -29,7 +29,8 @@ format:
     toc: true
     toc-location: left
     theme: 
-      light: simplex 
+      light: simplex
+      # sketchy
       dark: cyborg
     css: styles.css
 

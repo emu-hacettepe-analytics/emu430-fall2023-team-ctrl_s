@@ -1,24 +1,35 @@
 ---
-title: "Team XXX"
+title: "Ctrl_S"
 sidebar: false 
 ---
 
-This is our project webpage.
-
-Please stay tuned to follow our project activities.
-
-This is our template.
+***Mobil Market Dynamics: Global and Turkey Market Analysis***
 
 # Team Members
 
-1.  [Edin_Džeko](https://tr.wikipedia.org/wiki/Edin_D%C5%BEeko)
+1.  [A. Aykut Şimşek](http://aykutsimsek.net)
 
-2.  [Dušan Tadić](https://tr.wikipedia.org/wiki/Du%C5%A1an_Tadi%C4%87)
+2.  [Akif Bora Eren](https://emu-hacettepe-analytics.github.io/emu430-fall2023-akifboraeren/)
 
-3.  [Frederico Rodrigues de Paula Santos](https://tr.wikipedia.org/wiki/Fred_(1993_do%C4%9Fumlu_futbolcu))
+3.  [Baran Can Şahin](https://emu-hacettepe-analytics.github.io/emu430-fall2023-sahinbarancan/)
 
-4.  [Sebastian Szymański](https://tr.wikipedia.org/wiki/Sebastian_Szyma%C5%84ski)
+4.  [Serhat Kaya](https://emu-hacettepe-analytics.github.io/emu430-fall2023-SerhattKayaa/)
+
+5.  [Süleyma Çelik](https://emu-hacettepe-analytics.github.io/emu430-fall2023-celikksuleyman/)
 
 # Project Topic
 
-# Data Set
+Mobile communication technologies have rapidly evolved into a thriving industry, becoming one of the world's largest markets. In this context, the widespread use of mobile devices globally has created a competitive market, compelling companies to race to expand their shares. Simultaneously, the internal dynamics and market characteristics of each country play crucial roles in shaping the market shares of mobile vendors.
+
+In this project, we will examine the differences between the global market shares of mobile vendors and those in Turkey, along with the underlying reasons for these differences. Firstly, we will seek to understand how mobile market shares are distributed worldwide.
+Subsequently, we will shift our focus to Turkey, analyzing the dynamics of mobile vendors' market shares in this country.
+
+This analysis will also evaluate technological trends, consumer behaviors, and current industry developments. The findings obtained will shed valuable light on determining the competitive advantages of mobile vendors globally and in Turkey, shaping their strategies for the future.
+
+# Data Sets
+
+[Data Set -- 1 : Mobile Vendor Market Share Worldwide (April 2017 - April 2023)](https://gs.statcounter.com/vendor-market-share/mobile/worldwide/#monthly-201704-202304)
+
+[Data Set -- 2 : Mobile Vendor Market Share in Turkey (April 2017 - April 2023)](https://gs.statcounter.com/vendor-market-share/mobile/turkey/#monthly-201704-202304)
+
+![](images/mobile-569.gif){fig-align="center" width="377"}
