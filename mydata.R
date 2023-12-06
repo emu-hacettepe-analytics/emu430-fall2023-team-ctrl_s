@@ -1,0 +1,7 @@
+install.packages("readr")
+library(readr)
+install.packages("readxl")
+library(readxl)
+install.packages("utf8")
+library(utf8)
+my_data <- read_excel("C:\\Users\\Suley\\OneDrive\\Masaüstü\\vendordata.xlsx")
