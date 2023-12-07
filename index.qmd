@@ -2,23 +2,19 @@
 ---sidebar: false 
 ---
 
-![](images/text%20(2).gif){fig-align="center" width="266"}
-
-![](images/text%20(8).gif){fig-align="center"}
-
-![](images/text%20(7)-01.gif){fig-align="center"}
+![](images/Logo_Son.png){fig-align="center" width="500"}
 
 # Team Members
 
-1.  [A. Aykut Şimşek](http://aykutsimsek.net)
+1.  [*A. Aykut Şimşek*](http://aykutsimsek.net)
 
-2.  [Akif Bora Eren](https://emu-hacettepe-analytics.github.io/emu430-fall2023-akifboraeren/)
+2.  [*Akif Bora Eren*](https://emu-hacettepe-analytics.github.io/emu430-fall2023-akifboraeren/)
 
-3.  [Baran Can Şahin](https://emu-hacettepe-analytics.github.io/emu430-fall2023-sahinbarancan/)
+3.  [*Baran Can Şahin*](https://emu-hacettepe-analytics.github.io/emu430-fall2023-sahinbarancan/)
 
-4.  [Serhat Kaya](https://emu-hacettepe-analytics.github.io/emu430-fall2023-SerhattKayaa/)
+4.  [*Serhat Kaya*](https://emu-hacettepe-analytics.github.io/emu430-fall2023-SerhattKayaa/)
 
-5.  [Süleyman Çelik](https://emu-hacettepe-analytics.github.io/emu430-fall2023-celikksuleyman/)
+5.  [*Süleyman Çelik*](https://emu-hacettepe-analytics.github.io/emu430-fall2023-celikksuleyman/)
 
 # Project Topic
 

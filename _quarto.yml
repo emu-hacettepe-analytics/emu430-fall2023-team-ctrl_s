@@ -17,7 +17,7 @@ website:
             
     tools:
       - icon: github
-        href: https://twitter.com
+        href: https://github.com/emu-hacettepe-analytics/emu430-fall2023-team-ctrl_s/tree/master
 
   page-navigation: true
   back-to-top-navigation: true
@@ -28,10 +28,11 @@ format:
   html:
     toc: true
     toc-location: left
-    theme: 
-      light: simplex
+    theme: lux
+      # lux
+      # simplex
       # sketchy
-      dark: cyborg
+      # dark: cyborg
     css: styles.css
 
 
