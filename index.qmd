@@ -2,7 +2,7 @@
 ---sidebar: false 
 ---
 
-![](images/Logo_Son.png){fig-align="center" width="500"}
+![](images/Logo_Son-01.png){fig-align="center" width="455"}
 
 # Team Members
 
