@@ -7,3 +7,5 @@ About this site
 ```{r}
 1 + 1
 ```
+
+Yapay zeka nerden yararlandık notu : seperate remove = false kısmı
