@@ -9,3 +9,11 @@ About this site
 ```
 
 Yapay zeka nerden yararlandık notu : seperate remove = false kısmı
+
+![](images/11111.jpg){fig-align="center"}
+
+theme_ipsum()
+
+![](images/222.jpg){fig-align="center"}
+
+theme_ft_rc()

@@ -10,6 +10,7 @@ library(tidyverse)
 library(hrbrthemes)
 # install.packages("ggthemes")
 library(ggthemes)
+library(ggplot2)
 
 head(vendordatason)
 
@@ -34,6 +35,7 @@ data_oneplus <- new_data_sep_year %>% filter(Brand == "OnePlus")
 data_htc <- new_data_sep_year %>% filter(Brand == "HTC")
 data_google <- new_data_sep_year %>% filter(Brand == "Google")
 data_other <- new_data_sep_year %>% filter(Brand == "Other")
+data_tecno <- new_data_sep_year %>% filter(Brand == "Tecno")
 
 
 new_data_first_four_imp  %>% 
@@ -45,63 +47,116 @@ new_data_first_four_imp  %>%
 
 new_data
 
+new_data_sep_year %>% ggplot(aes(Date, Rate)) +
+  geom_point(aes(color = Brand)) +
+  theme_ipsum() +
+  theme(axis.text.x = element_blank()) +
+  ggtitle("Global Dominance")
+
 
 
 data_samsung %>% ggplot(aes(Date, Rate)) +
-  geom_point(aes(color = Year)) +
-  theme_wsj() +
-  scale_y_log10() +
-  theme(axis.text.x = element_blank()) +
-  ggtitle("Samsung's Global Dominance")
+  geom_point(color = "black", size = 3) +
+  theme_ipsum() +
+  scale_y_continuous(limits = c(0, 35)) +
+  # theme(axis.text.x = element_blank()) +
+  ggtitle("Samsung's Global Dominance") +
+  scale_x_discrete(breaks = c("2017-12", "2018-12", "2019-12", "2020-12", "2021-12", "2022-12")) + 
+  theme(plot.title = element_text(color = "#0c4da2", size = 35))
+
+  #A3AAAE Apple
 
 data_apple %>% ggplot(aes(Date, Rate)) +
-  geom_point(aes(color = Year)) +
-  theme_wsj() +
-  scale_y_log10() +
-  theme(axis.text.x = element_blank()) +
-  ggtitle("Apple's Global Dominance")
+  geom_point(color = "black", size = 3) +
+  theme_ipsum() +
+  scale_y_continuous(limits = c(0, 35)) +
+  ggtitle("Apple's Global Dominance") +
+  scale_x_discrete(breaks = c("2017-12", "2018-12", "2019-12", "2020-12", "2021-12", "2022-12")) + 
+  theme(plot.title = element_text(color = "#A3AAAE", size = 35))
+
+#FF6900 Xiaomi
 
 data_xiaomi %>% ggplot(aes(Date, Rate)) +
-  geom_point(aes(color = Year)) +
-  theme_wsj() +
-  scale_y_log10() +
-  theme(axis.text.x = element_blank()) +
-  ggtitle("Xiaomi's Global Dominance")
+  geom_point(color = "black", size = 3) +
+  theme_ipsum() +
+  scale_y_continuous(limits = c(0, 35)) +
+  ggtitle("Xiaomi's Global Dominance") +
+  scale_x_discrete(breaks = c("2017-12", "2018-12", "2019-12", "2020-12", "2021-12", "2022-12")) + 
+  theme(plot.title = element_text(color = "#FF6900", size = 35))
+
+
+data_huawei %>% ggplot(aes(Date, Rate)) +
+  geom_point(color = "black", size = 3) +
+  theme_ipsum() +
+  scale_y_continuous(limits = c(0, 15)) +
+  ggtitle("Huawei's Global Dominance") +
+  scale_x_discrete(breaks = c("2017-12", "2018-12", "2019-12", "2020-12", "2021-12", "2022-12")) + 
+  theme(plot.title = element_text(color = "#CF0A2C", size = 35))
+
 
 data_oppo %>% ggplot(aes(Date, Rate)) +
-  geom_point(aes(color = Year)) +
-  theme_wsj() +
-  scale_y_log10() +
-  theme(axis.text.x = element_blank()) +
-  ggtitle("Oppo's Global Dominance")
+  geom_point(color = "black", size = 3) +
+  theme_ipsum() +
+  scale_y_continuous(limits = c(0, 15)) +
+  ggtitle("Oppo's Global Dominance") +
+  scale_x_discrete(breaks = c("2017-12", "2018-12", "2019-12", "2020-12", "2021-12", "2022-12")) +
+  theme(plot.title = element_text(color = "#1EA366", size = 35))
 
 data_vivo %>% ggplot(aes(Date, Rate)) +
-  geom_point(aes(color = Year)) +
-  theme_wsj() +
-  scale_y_log10() +
-  theme(axis.text.x = element_blank()) +
-  ggtitle("Vivo's Global Dominance")
+  geom_point(color =  "black", size = 3 ) +
+  theme_ipsum() +
+  scale_y_continuous(limits = c(0, 15)) +
+  ggtitle("Vivo's Global Dominance") +
+  scale_x_discrete(breaks = c("2017-12", "2018-12", "2019-12", "2020-12", "2021-12", "2022-12")) + 
+  theme(plot.title = element_text(color = "#0072B8", size = 35))
 
-data_apple %>% ggplot(aes(Date, Rate)) +
-  geom_point(aes(color = Year)) +
-  theme_wsj() +
-  scale_y_log10() +
-  theme(axis.text.x = element_blank()) +
-  ggtitle("Apple's Global Dominance")
+#990033 LG
 
 data_lg %>% ggplot(aes(Date, Rate)) +
-  geom_point(aes(color = Year)) +
-  theme_wsj() +
-  scale_y_log10() +
-  theme(axis.text.x = element_blank()) +
-  ggtitle("LG's Global Dominance")
+  geom_point(color =  "black", size = 3 ) +
+  theme_ipsum() +
+  scale_y_continuous(limits = c(0, 15)) +
+  ggtitle("LG's Global Dominance") +
+  scale_x_discrete(breaks = c("2017-12", "2018-12", "2019-12", "2020-12", "2021-12", "2022-12")) + 
+  theme(plot.title = element_text(color = "#990033", size = 35))
 
 data_htc %>% ggplot(aes(Date, Rate)) +
-  geom_point(aes(color = Year)) +
-  theme_wsj() +
-  scale_y_log10() +
-  theme(axis.text.x = element_blank()) +
-  ggtitle("HTC's Global Dominance")
+  geom_point(color = "black", size = 3) +
+  theme_ipsum() +
+  scale_y_continuous(limits = c(0, 15)) +
+  ggtitle("HTC's Global Dominance") +
+  scale_x_discrete(breaks = c("2017-12", "2018-12", "2019-12", "2020-12", "2021-12", "2022-12")) + 
+  theme(plot.title = element_text(color = "#8CC751", size = 35))
+
+#8CC751 HTC
+
+data_other %>% ggplot(aes(Date, Rate)) +
+  geom_point(color = "black", size = 3) +
+  theme_ipsum() +
+  # scale_y_continuous(limits = c(0, max(data_samsung$Rate))) +
+  ggtitle("Other Brand's Global Dominance") +
+  scale_x_discrete(breaks = c("2017-12", "2018-12", "2019-12", "2020-12", "2021-12", "2022-12")) + 
+  theme(plot.title = element_text(color = "#660099", size = 35))
+
+
+data_tecno %>% ggplot(aes(Date, Rate)) +
+  geom_point(color = "black", size = 3) +
+  theme_ipsum() +
+  scale_y_continuous(limits =c(0, 15)) +
+  ggtitle("Tecno's Global Dominance") +
+  scale_x_discrete(breaks = c("2017-12", "2018-12", "2019-12", "2020-12", "2021-12", "2022-12")) + 
+  theme(plot.title = element_text(color = "#006B8B", size = 35))
+
+
+data_sony %>% ggplot(aes(Date, Rate)) +
+  geom_point(color = "black", size = 3) +
+  theme_ipsum() +
+  scale_y_continuous(limits =c(0, 15)) +
+  ggtitle("Sony's Global Dominance") +
+  scale_x_discrete(breaks = c("2017-12", "2018-12", "2019-12", "2020-12", "2021-12", "2022-12")) + 
+  theme(plot.title = element_text(color = "black", size = 35))
+
+
 
 
 
