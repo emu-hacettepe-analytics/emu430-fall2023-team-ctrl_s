@@ -1,18 +1,13 @@
-install.packages("readr")
 library(readr)
-install.packages("readxl")
 library(readxl)
-install.packages("utf8")
 library(utf8)
 library(ggplot2)
 library(tidyverse)
-install.packages("hrbrthemes")
 library(hrbrthemes)
-install.packages("ggthemes")
 library(ggthemes)
 library(ggplot2)
 
-^#fdatason <- read_excel("GitHub/emu430-fall2023-team-ctrl_s/vendordatason.xlsx")
+#fdatason <- read_excel("GitHub/emu430-fall2023-team-ctrl_s/vendordatason.xlsx")
 
 head(vendordatason)
 
@@ -46,8 +41,6 @@ new_data_first_four_imp  %>%
   scale_y_log10() + 
   facet_wrap(~ Brand) 
 
-
-new_data
 
 new_data_sep_year %>% ggplot(aes(Date, Rate)) +
   geom_point(aes(color = Brand)) +
