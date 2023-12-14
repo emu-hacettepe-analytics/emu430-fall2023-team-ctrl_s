@@ -1,16 +1,18 @@
-# install.packages("readr")
+install.packages("readr")
 library(readr)
-#install.packages("readxl")
+install.packages("readxl")
 library(readxl)
-#install.packages("utf8")
+install.packages("utf8")
 library(utf8)
 library(ggplot2)
 library(tidyverse)
-# install.packages("hrbrthemes")
+install.packages("hrbrthemes")
 library(hrbrthemes)
-# install.packages("ggthemes")
+install.packages("ggthemes")
 library(ggthemes)
 library(ggplot2)
+
+^#fdatason <- read_excel("GitHub/emu430-fall2023-team-ctrl_s/vendordatason.xlsx")
 
 head(vendordatason)
 
