@@ -12,7 +12,7 @@ Yapay zeka nerden yararlandık notu : seperate remove = false kısmı
 
 # XIAOMI![](Final%20Tablolar/Logolar/xiaomi-33334.png){width="117"}
 
-![](Final Tablolar/Rplot-global-xiaomi.png){fig-align="center"}
+![](Final%20Tablolar/Rplot-global-xiaomi.png){fig-align="center"}
 
 # \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
@@ -27,3 +27,17 @@ Yapay zeka nerden yararlandık notu : seperate remove = false kısmı
 ![](Final%20Tablolar/Rplot-global-samsung.png){fig-align="center"}
 
 # \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
+
+![](images/Rplot_apple_compared.png)
+
+2000 750
+
+![3000 1000](images/Rplot_apple_compared2.png)
+
+![](images/Rplot_apple_compared_son.png)
+
+2250 750
+
+![](images/Rplotappletest.png)
+
+1500 450
