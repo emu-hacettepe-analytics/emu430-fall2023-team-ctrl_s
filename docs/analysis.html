@@ -20,40 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -127,10 +93,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="nav-link active" href="./analysis.html" rel="" target="" aria-current="page">
  <span class="menu-text">Analysis</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./analysisss.html" rel="" target="">
- <span class="menu-text">analysisss</span></a>
-  </li>  
 </ul>
             <div class="quarto-navbar-tools ms-auto">
     <a href="https://github.com/emu-hacettepe-analytics/emu430-fall2023-team-ctrl_s/tree/master" rel="" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
@@ -147,9 +109,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#xiaomi" id="toc-xiaomi" class="nav-link active" data-scroll-target="#xiaomi">XIAOMI<img src="Final Tablolar/Logolar/xiaomi-33334.png" class="img-fluid" width="117"></a></li>
-  <li><a href="#huawei" id="toc-huawei" class="nav-link" data-scroll-target="#huawei">HUAWEI <img src="images/Huawei_Standard_logo.svg-min.png" class="img-fluid" width="72"></a></li>
-  <li><a href="#samsung" id="toc-samsung" class="nav-link" data-scroll-target="#samsung">SAMSUNG <img src="Final Tablolar/Logolar/samsung-logo-png-1304.png" class="img-fluid" width="156"></a></li>
+  <li><a href="#genel-grafikler" id="toc-genel-grafikler" class="nav-link active" data-scroll-target="#genel-grafikler">GENEL GRAFİKLER</a></li>
+  <li><a href="#comparisons" id="toc-comparisons" class="nav-link" data-scroll-target="#comparisons">COMPARISONS</a>
+  <ul class="collapse">
+  <li><a href="#samsung" id="toc-samsung" class="nav-link" data-scroll-target="#samsung">SAMSUNG <img src="images/samsung-logo-png-1304.png" width="100" height="35"></a></li>
+  <li><a href="#apple" id="toc-apple" class="nav-link" data-scroll-target="#apple">APPLE <img src="images/png-apple-logo-9708.png" class="img-fluid" width="60"></a></li>
+  <li><a href="#xiaomi" id="toc-xiaomi" class="nav-link" data-scroll-target="#xiaomi">XIAOMI <img src="images/xiaomi-33334-01.png" class="img-fluid" width="60"></a></li>
+  <li><a href="#huawei" id="toc-huawei" class="nav-link" data-scroll-target="#huawei">HUAWEI <img src="images/Huawei_Standard_logo.svg-min-01.png" class="img-fluid" width="60"></a></li>
+  <li><a href="#other" id="toc-other" class="nav-link" data-scroll-target="#other">OTHER <img src="images/3656607-200.png" class="img-fluid" width="60"></a></li>
+  <li><a href="#oppo" id="toc-oppo" class="nav-link" data-scroll-target="#oppo">OPPO <img src="images/oppo-logo-40767-01.png" width="100" height="23"></a></li>
+  <li><a href="#lg" id="toc-lg" class="nav-link" data-scroll-target="#lg">LG <img src="images/lg-logo-14410.png" width="100" height="51"></a></li>
+  <li><a href="#vivo" id="toc-vivo" class="nav-link" data-scroll-target="#vivo">VIVO <img src="images/Vivo.png" class="img-fluid" width="100"></a></li>
+  <li><a href="#realme" id="toc-realme" class="nav-link" data-scroll-target="#realme">REALME <img src="images/Realme-01.png" width="100" height="29"></a></li>
+  <li><a href="#sony" id="toc-sony" class="nav-link" data-scroll-target="#sony">SONY <img src="images/sony-logo-3074.png" width="100" height="17"></a></li>
+  <li><a href="#nokia" id="toc-nokia" class="nav-link" data-scroll-target="#nokia">NOKIA <img src="images/Nokia-Logo-PNG3-01.png" width="100" height="28"></a></li>
+  <li><a href="#oneplus" id="toc-oneplus" class="nav-link" data-scroll-target="#oneplus">ONEPLUS <img src="images/OnePlus-Logo.wine.png" width="100" height="23"></a></li>
+  <li><a href="#htc" id="toc-htc" class="nav-link" data-scroll-target="#htc">HTC <img src="images/HTC One.png" width="100" height="30"></a></li>
+  <li><a href="#nokia-1" id="toc-nokia-1" class="nav-link" data-scroll-target="#nokia-1">NOKIA <img src="images/Nokia-Logo-PNG3.png" width="100" height="21"></a></li>
+  <li><a href="#tecno" id="toc-tecno" class="nav-link" data-scroll-target="#tecno">TECNO <img src="images/Tecno Logo Vector.png" width="100" height="19"></a></li>
+  <li><a href="#bonus-unknown" id="toc-bonus-unknown" class="nav-link" data-scroll-target="#bonus-unknown">BONUS : UNKNOWN <img src="images/unknown-18-128.png" class="img-fluid" width="60"></a></li>
+  </ul></li>
   </ul>
 </nav>
 </nav>
@@ -177,68 +156,147 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<p>About this site</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
-</div>
-</div>
-<p>Yapay zeka nerden yararlandık notu : seperate remove = false kısmı</p>
-<section id="xiaomi" class="level1">
-<h1>XIAOMI<img src="Final Tablolar/Logolar/xiaomi-33334.png" class="img-fluid" width="117"></h1>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="Final Tablolar/Rplot-global-xiaomi.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
+<section id="genel-grafikler" class="level1">
+<h1>GENEL GRAFİKLER</h1>
+<p><br></p>
+<p><img src="compared_graphs_final/TR_all_graph.png" class="img-fluid"></p>
+<p><br></p>
+<hr>
+<p><br></p>
+<p><img src="compared_graphs_final/WW_all_graph.png" class="img-fluid"></p>
 <hr>
 <hr>
+<p><br></p>
 </section>
-<section id="huawei" class="level1">
-<h1>HUAWEI <img src="images/Huawei_Standard_logo.svg-min.png" class="img-fluid" width="72"></h1>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="Final Tablolar/Rplot-global-huawei.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
+<section id="comparisons" class="level1">
+<h1>COMPARISONS</h1>
+<hr>
+<section id="samsung" class="level2">
+<h2 class="anchored" data-anchor-id="samsung">SAMSUNG <img src="images/samsung-logo-png-1304.png" width="100" height="35"></h2>
+<p><img src="images/Rplot_samsung_compared.png" class="img-fluid"></p>
+<p><br></p>
 <hr>
 <hr>
+<p><br></p>
 </section>
-<section id="samsung" class="level1">
-<h1>SAMSUNG <img src="Final Tablolar/Logolar/samsung-logo-png-1304.png" class="img-fluid" width="156"></h1>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="Final Tablolar/Rplot-global-samsung.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
+<section id="apple" class="level2">
+<h2 class="anchored" data-anchor-id="apple">APPLE <img src="images/png-apple-logo-9708.png" class="img-fluid" width="60"></h2>
+<p><img src="images/Rplot_apple_compared-01.png" class="img-fluid"></p>
+<p><br></p>
 <hr>
 <hr>
-<p><img src="images/Rplot_apple_compared.png" class="img-fluid" width="1043"></p>
-<p>2000 750</p>
+<p><br></p>
+</section>
+<section id="xiaomi" class="level2">
+<h2 class="anchored" data-anchor-id="xiaomi">XIAOMI <img src="images/xiaomi-33334-01.png" class="img-fluid" width="60"></h2>
+<p><img src="images/Rplot_xiaomi_compared.png" class="img-fluid"></p>
+<p><br></p>
 <hr>
 <hr>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/Rplot_apple_compared2.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">3000 1000</figcaption>
-</figure>
-</div>
-<p><img src="images/Rplot_apple_compared_son.png" class="img-fluid"></p>
-<p>2250 750</p>
+<p><br></p>
+</section>
+<section id="huawei" class="level2">
+<h2 class="anchored" data-anchor-id="huawei">HUAWEI <img src="images/Huawei_Standard_logo.svg-min-01.png" class="img-fluid" width="60"></h2>
+<p><img src="images/Rplot_huawei_compared.png" class="img-fluid"></p>
+<p><br></p>
 <hr>
 <hr>
-<p><img src="images/Rplotappletest.png" class="img-fluid"></p>
-<p>1500 450</p>
+<p><br></p>
+</section>
+<section id="other" class="level2">
+<h2 class="anchored" data-anchor-id="other">OTHER <img src="images/3656607-200.png" class="img-fluid" width="60"></h2>
+<p><img src="images/Rplot_other_compared.png" class="img-fluid"></p>
+<p><br></p>
 <hr>
 <hr>
-<p><img src="images/Rplotsamsungdeneme3.png" class="img-fluid"></p>
-<p><img src="images/Rplotsamsungdeneme4.png" class="img-fluid"></p>
-<p><img src="images/Rplotsss.png" class="img-fluid"></p>
-<p><img src="images/DENEME.png" class="img-fluid"></p>
-<p><img src="images/Rplotdenemsonson.png" class="img-fluid"></p>
+<p><br></p>
+</section>
+<section id="oppo" class="level2">
+<h2 class="anchored" data-anchor-id="oppo">OPPO <img src="images/oppo-logo-40767-01.png" width="100" height="23"></h2>
+<p><img src="images/Rplot_oppo_compared.png" class="img-fluid"></p>
+<p><br></p>
+<hr>
+<hr>
+<p><br></p>
+</section>
+<section id="lg" class="level2">
+<h2 class="anchored" data-anchor-id="lg">LG <img src="images/lg-logo-14410.png" width="100" height="51"></h2>
+<p><img src="images/Rplot_lg_compared.png" class="img-fluid"></p>
+<p><br></p>
+<hr>
+<hr>
+<p><br></p>
+</section>
+<section id="vivo" class="level2">
+<h2 class="anchored" data-anchor-id="vivo">VIVO <img src="images/Vivo.png" class="img-fluid" width="100"></h2>
+<p><img src="images/Rplot_vivo_compared.png" class="img-fluid"></p>
+<p><br></p>
+<hr>
+<hr>
+<p><br></p>
+</section>
+<section id="realme" class="level2">
+<h2 class="anchored" data-anchor-id="realme">REALME <img src="images/Realme-01.png" width="100" height="29"></h2>
+<p><img src="images/Rplot_realme_compared.png" class="img-fluid"></p>
+<p><br></p>
+<hr>
+<hr>
+<p><br></p>
+</section>
+<section id="sony" class="level2">
+<h2 class="anchored" data-anchor-id="sony">SONY <img src="images/sony-logo-3074.png" width="100" height="17"></h2>
+<p><img src="images/Rplot_sony_compared.png" class="img-fluid"></p>
+<p><br></p>
+<hr>
+<hr>
+<p><br></p>
+</section>
+<section id="nokia" class="level2">
+<h2 class="anchored" data-anchor-id="nokia">NOKIA <img src="images/Nokia-Logo-PNG3-01.png" width="100" height="28"></h2>
+<p><img src="images/Rplot_nokia_compared-01.png" class="img-fluid"></p>
+<p><br></p>
+<hr>
+<hr>
+<p><br></p>
+</section>
+<section id="oneplus" class="level2">
+<h2 class="anchored" data-anchor-id="oneplus">ONEPLUS <img src="images/OnePlus-Logo.wine.png" width="100" height="23"></h2>
+<p><img src="images/Rplot_oneplus_compared-01.png" class="img-fluid"></p>
+<p><br></p>
+<hr>
+<hr>
+<p><br></p>
+</section>
+<section id="htc" class="level2">
+<h2 class="anchored" data-anchor-id="htc">HTC <img src="images/HTC One.png" width="100" height="30"></h2>
+<p><img src="images/Rplot_htc_compared.png" class="img-fluid"></p>
+<p><br></p>
+<hr>
+<hr>
+<p><br></p>
+</section>
+<section id="nokia-1" class="level2">
+<h2 class="anchored" data-anchor-id="nokia-1">NOKIA <img src="images/Nokia-Logo-PNG3.png" width="100" height="21"></h2>
+<p><img src="images/Rplot_nokia_compared.png" class="img-fluid"></p>
+<p><br></p>
+<hr>
+<hr>
+<p><br></p>
+</section>
+<section id="tecno" class="level2">
+<h2 class="anchored" data-anchor-id="tecno">TECNO <img src="images/Tecno Logo Vector.png" width="100" height="19"></h2>
+<p><img src="images/Rplot_tecno_compared.png" class="img-fluid"></p>
+<p><br></p>
+<hr>
+<hr>
+<p><br></p>
+</section>
+<section id="bonus-unknown" class="level2">
+<h2 class="anchored" data-anchor-id="bonus-unknown">BONUS : UNKNOWN <img src="images/unknown-18-128.png" class="img-fluid" width="60"></h2>
+<p><img src="images/Rplot_unknown_compared.png" class="img-fluid"></p>
 
 
+</section>
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->

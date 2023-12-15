@@ -30,17 +30,13 @@ data_xiaomi <- new_data_sep_year %>% filter(Brand == "Xiaomi")
 data_huawei <- new_data_sep_year %>% filter(Brand == "Huawei")
 data_oppo <- new_data_sep_year %>% filter(Brand == "Oppo")
 data_unknown <- new_data_sep_year %>% filter(Brand == "Unknown")
-data_motorola <- new_data_sep_year %>% filter(Brand == "Motorola")
 data_lg <- new_data_sep_year %>% filter(Brand == "LG")
-data_lenovo <- new_data_sep_year %>% filter(Brand == "Lenovo")
 data_vivo <- new_data_sep_year %>% filter(Brand == "Vivo")
 data_nokia <- new_data_sep_year %>% filter(Brand == "Nokia")
 data_realme <- new_data_sep_year %>% filter(Brand == "Realme")
 data_sony <- new_data_sep_year %>% filter(Brand == "Sony")
-data_asus <- new_data_sep_year %>% filter(Brand == "Asus")
 data_oneplus <- new_data_sep_year %>% filter(Brand == "OnePlus")
 data_htc <- new_data_sep_year %>% filter(Brand == "HTC")
-data_google <- new_data_sep_year %>% filter(Brand == "Google")
 data_other <- new_data_sep_year %>% filter(Brand == "Other")
 data_tecno <- new_data_sep_year %>% filter(Brand == "Tecno")
 
@@ -130,7 +126,7 @@ print(glob_huawei_plot)
 glob_oppo_plot <- data_oppo %>% ggplot(aes(Date, Rate)) +
   geom_point(color = "black", size = 3) +
   theme_ipsum() +
-  scale_y_continuous(limits = c(0, 15)) +
+  scale_y_continuous(limits = c(0, 10)) +
   ggtitle("Oppo's Global Dominance") +
   scale_x_discrete(breaks = c("2017-12", "2018-12", "2019-12", "2020-12", "2021-12", "2022-12")) +
   theme(axis.text.x = element_text(size = 26)) +
@@ -150,7 +146,7 @@ print(glob_oppo_plot)
 glob_vivo_plot <- data_vivo %>% ggplot(aes(Date, Rate)) +
   geom_point(color =  "black", size = 3 ) +
   theme_ipsum() +
-  scale_y_continuous(limits = c(0, 15)) +
+  scale_y_continuous(limits = c(0, 10)) +
   ggtitle("Vivo's Global Dominance") +
   scale_x_discrete(breaks = c("2017-12", "2018-12", "2019-12", "2020-12", "2021-12", "2022-12")) + 
   theme(axis.text.x = element_text(size = 26)) +
@@ -171,7 +167,7 @@ print(glob_vivo_plot)
 glob_lg_plot <- data_lg %>% ggplot(aes(Date, Rate)) +
   geom_point(color =  "black", size = 3 ) +
   theme_ipsum() +
-  scale_y_continuous(limits = c(0, 15)) +
+  scale_y_continuous(limits = c(0, 10)) +
   ggtitle("LG's Global Dominance") +
   scale_x_discrete(breaks = c("2017-12", "2018-12", "2019-12", "2020-12", "2021-12", "2022-12")) + 
   theme(axis.text.x = element_text(size = 26)) +
@@ -190,7 +186,7 @@ print(glob_lg_plot)
 glob_htc_plot <- data_htc %>% ggplot(aes(Date, Rate)) +
   geom_point(color = "black", size = 3) +
   theme_ipsum() +
-  scale_y_continuous(limits = c(0, 15)) +
+  scale_y_continuous(limits = c(0, 10)) +
   ggtitle("HTC's Global Dominance") +
   scale_x_discrete(breaks = c("2017-12", "2018-12", "2019-12", "2020-12", "2021-12", "2022-12")) + 
   theme(axis.text.x = element_text(size = 26)) +
@@ -211,7 +207,7 @@ print(glob_htc_plot)
 glob_other_plot <- data_other %>% ggplot(aes(Date, Rate)) +
   geom_point(color = "black", size = 3) +
   theme_ipsum() +
-  # scale_y_continuous(limits = c(0, max(data_samsung$Rate))) +
+  scale_y_continuous(limits =c(0, 15)) +
   ggtitle("Other Brand's Global Dominance") +
   scale_x_discrete(breaks = c("2017-12", "2018-12", "2019-12", "2020-12", "2021-12", "2022-12")) + 
   theme(axis.text.x = element_text(size = 26)) +
@@ -231,7 +227,7 @@ print(glob_other_plot)
 glob_tecno_plot <- data_tecno %>% ggplot(aes(Date, Rate)) +
   geom_point(color = "black", size = 3) +
   theme_ipsum() +
-  scale_y_continuous(limits = c(0, 15)) +
+  scale_y_continuous(limits = c(0, 10)) +
   ggtitle("Tecno's Global Dominance") +
   scale_x_discrete(breaks = c("2017-12", "2018-12", "2019-12", "2020-12", "2021-12", "2022-12")) + 
   theme(axis.text.x = element_text(size = 26)) +
@@ -251,7 +247,7 @@ print(glob_tecno_plot)
 glob_sony_plot <- data_sony %>% ggplot(aes(Date, Rate)) +
   geom_point(color = "black", size = 3) +
   theme_ipsum() +
-  scale_y_continuous(limits =c(0, 15)) +
+  scale_y_continuous(limits =c(0, 10)) +
   ggtitle("Sony's Global Dominance") +
   scale_x_discrete(breaks = c("2017-12", "2018-12", "2019-12", "2020-12", "2021-12", "2022-12")) + 
   theme(axis.text.x = element_text(size = 26)) +
@@ -271,7 +267,7 @@ print(glob_sony_plot)
 glob_realme_plot <- data_realme %>% ggplot(aes(Date, Rate)) +
   geom_point(color = "black", size = 3) +
   theme_ipsum() +
-  scale_y_continuous(limits =c(0, 15)) +
+  scale_y_continuous(limits =c(0, 10)) +
   ggtitle("Realme's Global Dominance") +
   scale_x_discrete(breaks = c("2017-12", "2018-12", "2019-12", "2020-12", "2021-12", "2022-12")) + 
   theme(axis.text.x = element_text(size = 26)) +
@@ -291,7 +287,7 @@ print(glob_realme_plot)
 glob_google_plot <- data_google %>% ggplot(aes(Date, Rate)) +
   geom_point(color = "black", size = 3) +
   theme_ipsum() +
-  scale_y_continuous(limits =c(0, 15)) +
+  scale_y_continuous(limits =c(0, 10)) +
   ggtitle("Google's Global Dominance") +
   scale_x_discrete(breaks = c("2017-12", "2018-12", "2019-12", "2020-12", "2021-12", "2022-12")) + 
   theme(axis.text.x = element_text(size = 26)) +
@@ -303,6 +299,64 @@ glob_google_plot <- data_google %>% ggplot(aes(Date, Rate)) +
         panel.grid.minor = element_line(size = 1.00))  # Yardımcı ızgara çizgileri kalınlığı
 
 print(glob_google_plot)
+
+# ----------------------------------------------------
+
+
+glob_unknown_plot <- data_unknown %>% ggplot(aes(Date, Rate)) +
+  geom_point(color = "black", size = 3) +
+  theme_ipsum() +
+  ggtitle("Unknown Global Dominance") +
+  scale_x_discrete(breaks = c("2017-12", "2018-12", "2019-12", "2020-12", "2021-12", "2022-12")) + 
+  theme(axis.text.x = element_text(size = 26)) +
+  theme(axis.text.y = element_text(size = 29)) +
+  theme(axis.title.x = element_text(size = 30)) +     # X ekseni etiketi boyutu
+  theme(axis.title.y = element_text(size = 30))+
+  theme(plot.title = element_text(color = "black", size = 48)) +
+  theme(panel.grid.major = element_line(size = 1.25),  # Ana ızgara çizgileri kalınlığı
+        panel.grid.minor = element_line(size = 1.00))  # Yardımcı ızgara çizgileri kalınlığı
+
+print(glob_unknown_plot)
+
+
+# ----------------------------------------------------
+
+
+glob_oneplus_plot <- data_oneplus %>% ggplot(aes(Date, Rate)) +
+  geom_point(color = "black", size = 3) +
+  theme_ipsum() +
+  scale_y_continuous(limits =c(0, 10)) +
+  ggtitle("Oneplus's Global Dominance") +
+  scale_x_discrete(breaks = c("2017-12", "2018-12", "2019-12", "2020-12", "2021-12", "2022-12")) + 
+  theme(axis.text.x = element_text(size = 26)) +
+  theme(axis.text.y = element_text(size = 29)) +
+  theme(axis.title.x = element_text(size = 30)) +     # X ekseni etiketi boyutu
+  theme(axis.title.y = element_text(size = 30))+
+  theme(plot.title = element_text(color = "#F50514", size = 48)) +
+  theme(panel.grid.major = element_line(size = 1.25),  # Ana ızgara çizgileri kalınlığı
+        panel.grid.minor = element_line(size = 1.00))  # Yardımcı ızgara çizgileri kalınlığı
+
+print(glob_oneplus_plot)
+
+
+# ----------------------------------------------------
+
+
+glob_nokia_plot <- data_nokia %>% ggplot(aes(Date, Rate)) +
+  geom_point(color = "black", size = 3) +
+  theme_ipsum() +
+  ggtitle("Nokia's Global Dominance") +
+  scale_x_discrete(breaks = c("2017-12", "2018-12", "2019-12", "2020-12", "2021-12", "2022-12")) + 
+  theme(axis.text.x = element_text(size = 26)) +
+  theme(axis.text.y = element_text(size = 29)) +
+  theme(axis.title.x = element_text(size = 30)) +     # X ekseni etiketi boyutu
+  theme(axis.title.y = element_text(size = 30))+
+  theme(plot.title = element_text(color = "#183693", size = 48)) +
+  theme(panel.grid.major = element_line(size = 1.25),  # Ana ızgara çizgileri kalınlığı
+        panel.grid.minor = element_line(size = 1.00))  # Yardımcı ızgara çizgileri kalınlığı
+
+print(glob_nokia_plot)
+
 
 # ----------------------------------------------------
 # ----------------------------------------------------
@@ -408,7 +462,7 @@ print(tr_xiaomi_plot)
 tr_huawei_plot <- data_huawei_tr %>% ggplot(aes(Date, Rate)) +
   geom_point(color = "black", size = 3) +
   theme_ipsum() +
-  scale_y_continuous(limits = c(0, 15)) +
+  scale_y_continuous(limits = c(0, 60)) +
   ggtitle("Huawei's Turkey Dominance") +
   scale_x_discrete(breaks = c("2017-12", "2018-12", "2019-12", "2020-12", "2021-12", "2022-12")) + 
   theme(axis.text.x = element_text(size = 26)) +
@@ -428,7 +482,7 @@ print(tr_huawei_plot)
 tr_oppo_plot <- data_oppo_tr %>% ggplot(aes(Date, Rate)) +
   geom_point(color = "black", size = 3) +
   theme_ipsum() +
-  scale_y_continuous(limits = c(0, 15)) +
+  scale_y_continuous(limits = c(0, 10)) +
   ggtitle("Oppo's Turkey Dominance") +
   scale_x_discrete(breaks = c("2017-12", "2018-12", "2019-12", "2020-12", "2021-12", "2022-12")) +
   theme(axis.text.x = element_text(size = 26)) +
@@ -448,7 +502,7 @@ print(tr_oppo_plot)
 tr_vivo_plot <- data_vivo_tr %>% ggplot(aes(Date, Rate)) +
   geom_point(color =  "black", size = 3 ) +
   theme_ipsum() +
-  scale_y_continuous(limits = c(0, 15)) +
+  scale_y_continuous(limits = c(0, 10)) +
   ggtitle("Vivo's Turkey Dominance") +
   scale_x_discrete(breaks = c("2017-12", "2018-12", "2019-12", "2020-12", "2021-12", "2022-12")) + 
   theme(axis.text.x = element_text(size = 26)) +
@@ -469,7 +523,7 @@ print(tr_vivo_plot)
 tr_lg_plot <- data_lg_tr %>% ggplot(aes(Date, Rate)) +
   geom_point(color =  "black", size = 3 ) +
   theme_ipsum() +
-  scale_y_continuous(limits = c(0, 15)) +
+  scale_y_continuous(limits = c(0, 10)) +
   ggtitle("LG's Turkey Dominance") +
   scale_x_discrete(breaks = c("2017-12", "2018-12", "2019-12", "2020-12", "2021-12", "2022-12")) + 
   theme(axis.text.x = element_text(size = 26)) +
@@ -489,7 +543,7 @@ print(tr_lg_plot)
 tr_htc_plot <- data_htc_tr %>% ggplot(aes(Date, Rate)) +
   geom_point(color = "black", size = 3) +
   theme_ipsum() +
-  scale_y_continuous(limits = c(0, 15)) +
+  scale_y_continuous(limits = c(0, 10)) +
   ggtitle("HTC's Turkey Dominance") +
   scale_x_discrete(breaks = c("2017-12", "2018-12", "2019-12", "2020-12", "2021-12", "2022-12")) + 
   theme(axis.text.x = element_text(size = 26)) +
@@ -510,7 +564,7 @@ print(tr_htc_plot)
 tr_other_plot <- data_other_tr %>% ggplot(aes(Date, Rate)) +
   geom_point(color = "black", size = 3) +
   theme_ipsum() +
-  # scale_y_continuous(limits = c(0, max(data_samsung$Rate))) +
+  scale_y_continuous(limits =c(0, 15)) +
   ggtitle("Other Brand's Turkey Dominance") +
   scale_x_discrete(breaks = c("2017-12", "2018-12", "2019-12", "2020-12", "2021-12", "2022-12")) + 
   theme(axis.text.x = element_text(size = 26)) +
@@ -530,7 +584,7 @@ print(tr_other_plot)
 tr_tecno_plot <- data_tecno_tr %>% ggplot(aes(Date, Rate)) +
   geom_point(color = "black", size = 3) +
   theme_ipsum() +
-  scale_y_continuous(limits =c(0, 15)) +
+  scale_y_continuous(limits =c(0, 10)) +
   ggtitle("Tecno's Turkey Dominance") +
   scale_x_discrete(breaks = c("2017-12", "2018-12", "2019-12", "2020-12", "2021-12", "2022-12")) + 
   theme(axis.text.x = element_text(size = 26)) +
@@ -550,7 +604,7 @@ print(tr_tecno_plot)
 tr_sony_plot <- data_sony_tr %>% ggplot(aes(Date, Rate)) +
   geom_point(color = "black", size = 3) +
   theme_ipsum() +
-  scale_y_continuous(limits =c(0, 15)) +
+  scale_y_continuous(limits =c(0, 10)) +
   ggtitle("Sony's Turkey Dominance") +
   scale_x_discrete(breaks = c("2017-12", "2018-12", "2019-12", "2020-12", "2021-12", "2022-12")) + 
   theme(axis.text.x = element_text(size = 26)) +
@@ -570,7 +624,7 @@ print(tr_tecno_plot)
 tr_realme_plot <- data_realme_tr %>% ggplot(aes(Date, Rate)) +
   geom_point(color = "black", size = 3) +
   theme_ipsum() +
-  scale_y_continuous(limits =c(0, 15)) +
+  scale_y_continuous(limits =c(0, 10)) +
   ggtitle("Realme's Turkey Dominance") +
   scale_x_discrete(breaks = c("2017-12", "2018-12", "2019-12", "2020-12", "2021-12", "2022-12")) + 
   theme(axis.text.x = element_text(size = 26)) +
@@ -583,14 +637,14 @@ tr_realme_plot <- data_realme_tr %>% ggplot(aes(Date, Rate)) +
 
 print(tr_realme_plot)
 
-
+#continuos x ekseni kategorik değişken 
 # ----------------------------------------------------
 
-
-tr_google_plot <- data_google_tr %>% ggplot(aes(Date, Rate)) +
-  geom_point(color = "black", size = 3) +
+data_google_tr$Year <- as.integer(data_google_tr$Year)
+tr_google_plot <- data_google_tr %>% ggplot(aes(Year, Rate)) +
+  geom_line(color = "black", size = 3) +
   theme_ipsum() +
-  scale_y_continuous(limits =c(0, 15)) +
+  scale_y_continuous(limits =c(0, 10)) +
   ggtitle("Google's Turkey Dominance") +
   scale_x_discrete(breaks = c("2017-12", "2018-12", "2019-12", "2020-12", "2021-12", "2022-12")) + 
   theme(axis.text.x = element_text(size = 26)) +
@@ -602,6 +656,67 @@ tr_google_plot <- data_google_tr %>% ggplot(aes(Date, Rate)) +
         panel.grid.minor = element_line(size = 1.00))  # Yardımcı ızgara çizgileri kalınlığı
 
 print(tr_google_plot)
+
+
+# ----------------------------------------------------
+
+
+tr_unknown_plot <- data_unknown_tr %>% ggplot(aes(Date, Rate)) +
+  geom_point(color = "black", size = 3) +
+  theme_ipsum() +
+  # scale_y_continuous(limits =c(0, 10)) +
+  ggtitle("Unknown Turkey Dominance") +
+  scale_x_discrete(breaks = c("2017-12", "2018-12", "2019-12", "2020-12", "2021-12", "2022-12")) + 
+  theme(axis.text.x = element_text(size = 26)) +
+  theme(axis.text.y = element_text(size = 29)) +
+  theme(axis.title.x = element_text(size = 30)) +     # X ekseni etiketi boyutu
+  theme(axis.title.y = element_text(size = 30))+
+  theme(plot.title = element_text(color = "black", size = 48)) +
+  theme(panel.grid.major = element_line(size = 1.25),  # Ana ızgara çizgileri kalınlığı
+        panel.grid.minor = element_line(size = 1.00))  # Yardımcı ızgara çizgileri kalınlığı
+
+print(tr_unknown_plot)
+
+
+# ----------------------------------------------------
+
+
+tr_oneplus_plot <- data_oneplus_tr %>% ggplot(aes(Date, Rate)) +
+  geom_point(color = "black", size = 3) +
+  theme_ipsum() +
+  scale_y_continuous(limits =c(0, 10)) +
+  ggtitle("Oneplus's Turkey Dominance") +
+  scale_x_discrete(breaks = c("2017-12", "2018-12", "2019-12", "2020-12", "2021-12", "2022-12")) + 
+  theme(axis.text.x = element_text(size = 26)) +
+  theme(axis.text.y = element_text(size = 29)) +
+  theme(axis.title.x = element_text(size = 30)) +     # X ekseni etiketi boyutu
+  theme(axis.title.y = element_text(size = 30))+
+  theme(plot.title = element_text(color = "#F50514", size = 48)) +
+  theme(panel.grid.major = element_line(size = 1.25),  # Ana ızgara çizgileri kalınlığı
+        panel.grid.minor = element_line(size = 1.00))  # Yardımcı ızgara çizgileri kalınlığı
+
+print(tr_oneplus_plot)
+
+
+
+# ----------------------------------------------------
+
+
+tr_nokia_plot <- data_nokia_tr %>% ggplot(aes(Date, Rate)) +
+  geom_point(color = "black", size = 3) +
+  theme_ipsum() +
+  scale_y_continuous(limits =c(0, 10)) +
+  ggtitle("Nokia's Turkey Dominance") +
+  scale_x_discrete(breaks = c("2017-12", "2018-12", "2019-12", "2020-12", "2021-12", "2022-12")) + 
+  theme(axis.text.x = element_text(size = 26)) +
+  theme(axis.text.y = element_text(size = 29)) +
+  theme(axis.title.x = element_text(size = 30)) +     # X ekseni etiketi boyutu
+  theme(axis.title.y = element_text(size = 30))+
+  theme(plot.title = element_text(color = "#183693", size = 48)) +
+  theme(panel.grid.major = element_line(size = 1.25),  # Ana ızgara çizgileri kalınlığı
+        panel.grid.minor = element_line(size = 1.00))  # Yardımcı ızgara çizgileri kalınlığı
+
+print(tr_nokia_plot)
 
 
 # ----------------------------------------------------
@@ -650,8 +765,7 @@ print(lg_compare_globtr)
 
 # ----------------------------------------------------
 
-lenovo_compare_globtr <- tr_lenovo_plot + glob_lenovo_plot
-print(lenovo_compare_globtr)
+# Lenovo iptla
 
 # ----------------------------------------------------
 
@@ -670,8 +784,7 @@ print(sony_compare_globtr)
 
 # ----------------------------------------------------
 
-asus_compare_globtr <- tr_asus_plot + glob_asus_plot
-print(asus_compare_globtr)
+# Asus iptal
 
 # ----------------------------------------------------
 
@@ -685,8 +798,7 @@ print(htc_compare_globtr)
 
 # ----------------------------------------------------
 
-google_compare_globtr <- tr_google_plot + glob_google_plot
-print(google_compare_globtr)
+# Google iptal
 
 # ----------------------------------------------------
 
@@ -697,6 +809,10 @@ print(other_compare_globtr)
 
 tecno_compare_globtr <- tr_tecno_plot + glob_tecno_plot
 print(tecno_compare_globtr)
+# ----------------------------------------------------
+
+nokia_compare_globtr <- tr_nokia_plot + glob_nokia_plot
+print(nokia_compare_globtr)
 
 # ----------------------------------------------------
 # ----------------------------------------------------

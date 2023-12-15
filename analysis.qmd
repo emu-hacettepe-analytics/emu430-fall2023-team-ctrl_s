@@ -2,70 +2,210 @@
 title: "Analysis"
 ---
 
-About this site
+# GENEL GRAFİKLER
 
-```{r}
-1 + 1
-```
+<br>
 
-Yapay zeka nerden yararlandık notu : seperate remove = false kısmı
+![](compared_graphs_final/TR_all_graph.png)
 
-# XIAOMI![](Final%20Tablolar/Logolar/xiaomi-33334.png){width="117"}
+<br>
 
-![](Final%20Tablolar/Rplot-global-xiaomi.png){fig-align="center"}
+<hr>
+
+<br>
+
+![](compared_graphs_final/WW_all_graph.png)
 
 <hr>
 
 <hr>
 
-# HUAWEI ![](images/Huawei_Standard_logo.svg-min.png){width="72"}
+<br>
 
-![](Final%20Tablolar/Rplot-global-huawei.png){fig-align="center"}
+# COMPARISONS
+
+<hr>
+
+## SAMSUNG ![](images/samsung-logo-png-1304.png){width="100" height="35"}
+
+![](images/Rplot_samsung_compared.png)
+
+<br>
 
 <hr>
 
 <hr>
 
-# SAMSUNG ![](Final%20Tablolar/Logolar/samsung-logo-png-1304.png){width="156"}
+<br>
 
-![](Final%20Tablolar/Rplot-global-samsung.png){fig-align="center"}
+## APPLE ![](images/png-apple-logo-9708.png){width="60"}
 
-<hr>
+![](images/Rplot_apple_compared-01.png)
 
-<hr>
-
-![](images/Rplot_apple_compared.png){width="1043"}
-
-2000 750
+<br>
 
 <hr>
 
 <hr>
 
-![3000 1000](images/Rplot_apple_compared2.png)
+<br>
 
-![](images/Rplot_apple_compared_son.png)
+## XIAOMI ![](images/xiaomi-33334-01.png){width="60"}
 
-2250 750
+![](images/Rplot_xiaomi_compared.png)
 
-<hr>
-
-<hr>
-
-![](images/Rplotappletest.png)
-
-1500 450
+<br>
 
 <hr>
 
 <hr>
 
-![](images/Rplotsamsungdeneme3.png)
+<br>
 
-![](images/Rplotsamsungdeneme4.png)
+## HUAWEI ![](images/Huawei_Standard_logo.svg-min-01.png){width="60"}
 
-![](images/Rplotsss.png)
+![](images/Rplot_huawei_compared.png)
 
-![](images/DENEME.png)
+<br>
 
-![](images/Rplotdenemsonson.png)
+<hr>
+
+<hr>
+
+<br>
+
+## OTHER  ![](images/3656607-200.png){width="60"}
+
+![](images/Rplot_other_compared.png)
+
+<br>
+
+<hr>
+
+<hr>
+
+<br>
+
+## OPPO ![](images/oppo-logo-40767-01.png){width="100" height="23"}
+
+![](images/Rplot_oppo_compared.png)
+
+<br>
+
+<hr>
+
+<hr>
+
+<br>
+
+## LG ![](images/lg-logo-14410.png){width="100" height="51"}
+
+![](images/Rplot_lg_compared.png)
+
+<br>
+
+<hr>
+
+<hr>
+
+<br>
+
+## VIVO ![](images/Vivo.png){width="100"}
+
+![](images/Rplot_vivo_compared.png)
+
+<br>
+
+<hr>
+
+<hr>
+
+<br>
+
+## REALME ![](images/Realme-01.png){width="100" height="29"}
+
+![](images/Rplot_realme_compared.png)
+
+<br>
+
+<hr>
+
+<hr>
+
+<br>
+
+## SONY ![](images/sony-logo-3074.png){width="100" height="17"}
+
+![](images/Rplot_sony_compared.png)
+
+<br>
+
+<hr>
+
+<hr>
+
+<br>
+
+## NOKIA ![](images/Nokia-Logo-PNG3-01.png){width="100" height="28"}
+
+![](images/Rplot_nokia_compared-01.png)
+
+<br>
+
+<hr>
+
+<hr>
+
+<br>
+
+## ONEPLUS ![](images/OnePlus-Logo.wine.png){width="100" height="23"}
+
+![](images/Rplot_oneplus_compared-01.png)
+
+<br>
+
+<hr>
+
+<hr>
+
+<br>
+
+## HTC ![](images/HTC%20One.png){width="100" height="30"}
+
+![](images/Rplot_htc_compared.png)
+
+<br>
+
+<hr>
+
+<hr>
+
+<br>
+
+## NOKIA ![](images/Nokia-Logo-PNG3.png){width="100" height="21"}
+
+![](images/Rplot_nokia_compared.png)
+
+<br>
+
+<hr>
+
+<hr>
+
+<br>
+
+## TECNO ![](images/Tecno%20Logo%20Vector.png){width="100" height="19"}
+
+![](images/Rplot_tecno_compared.png)
+
+<br>
+
+<hr>
+
+<hr>
+
+<br>
+
+## BONUS : UNKNOWN  ![](images/unknown-18-128.png){width="60"}
+
+![](images/Rplot_unknown_compared.png)
