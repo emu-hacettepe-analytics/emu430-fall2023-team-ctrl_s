@@ -13,6 +13,8 @@ website:
         href: data.qmd
       - text: Analysis
         href: analysis.qmd
+      - text: analysisss
+        href: analysisss.qmd
 
             
     tools:

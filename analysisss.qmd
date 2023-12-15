@@ -1,0 +1,47 @@
+---
+title: "Analysis2"
+---
+
+# Comparison Global Market Dominance and Turkey Market Dominance
+
+## Samsung
+
+## Apple
+
+![](images/Rplot_apple_compared.png)
+
+## Xiaomi
+
+![](images/Rplot_xiaomi_compared.png)
+
+## Huawei
+
+![](images/Rplot_huawei_compared.png)
+
+## Oppo
+
+![](images/Rplot_oppo_compared.png)
+
+## Unknown
+
+## Motorola
+
+## LG
+
+![](images/Rplot_lg_compared.png)
+
+## Vivo
+
+![](images/Rplot_vivo_compared.png)
+
+## Nokia
+
+## 
+
+## Realme
+
+![](images/Rplot_realme_compared.png)
+
+## Sony
+
+![](images/Rplot_sony_compared.png)

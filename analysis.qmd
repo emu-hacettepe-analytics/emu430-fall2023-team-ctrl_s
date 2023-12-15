@@ -14,23 +14,33 @@ Yapay zeka nerden yararlandık notu : seperate remove = false kısmı
 
 ![](Final%20Tablolar/Rplot-global-xiaomi.png){fig-align="center"}
 
-# \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
+<hr>
+
+<hr>
 
 # HUAWEI ![](images/Huawei_Standard_logo.svg-min.png){width="72"}
 
 ![](Final%20Tablolar/Rplot-global-huawei.png){fig-align="center"}
 
-# \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
+<hr>
+
+<hr>
 
 # SAMSUNG ![](Final%20Tablolar/Logolar/samsung-logo-png-1304.png){width="156"}
 
 ![](Final%20Tablolar/Rplot-global-samsung.png){fig-align="center"}
 
-# \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
+<hr>
 
-![](images/Rplot_apple_compared.png)
+<hr>
+
+![](images/Rplot_apple_compared.png){width="1043"}
 
 2000 750
+
+<hr>
+
+<hr>
 
 ![3000 1000](images/Rplot_apple_compared2.png)
 
@@ -38,6 +48,24 @@ Yapay zeka nerden yararlandık notu : seperate remove = false kısmı
 
 2250 750
 
+<hr>
+
+<hr>
+
 ![](images/Rplotappletest.png)
 
 1500 450
+
+<hr>
+
+<hr>
+
+![](images/Rplotsamsungdeneme3.png)
+
+![](images/Rplotsamsungdeneme4.png)
+
+![](images/Rplotsss.png)
+
+![](images/DENEME.png)
+
+![](images/Rplotdenemsonson.png)

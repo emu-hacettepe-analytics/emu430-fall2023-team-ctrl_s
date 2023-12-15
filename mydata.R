@@ -47,13 +47,17 @@ data_tecno <- new_data_sep_year %>% filter(Brand == "Tecno")
 glob_samsung_plot <- data_samsung %>% ggplot(aes(Date, Rate)) +
   geom_point(color = "black", size = 3) +
   theme_ipsum() +
-  scale_y_continuous(limits = c(0, 35)) +
+  scale_y_continuous(limits = c(0, 60)) +
   # theme(axis.text.x = element_blank()) +
   ggtitle("Samsung's Global Dominance") +
-  scale_x_discrete(breaks = c("2017-12", "2018-12", "2019-12", "2020-12", "2021-12", "2022-12")) + 
+  scale_x_discrete(breaks = c("2017-12", "2018-12", "2019-12", "2020-12", "2021-12", "2022-12")) +
+  theme(axis.text.x = element_text(size = 26)) +
+  theme(axis.text.y = element_text(size = 29)) +
   theme(plot.title = element_text(color = "#0c4da2", size = 48)) +
+  theme(axis.title.x = element_text(size = 30)) +     # X ekseni etiketi boyutu
+  theme(axis.title.y = element_text(size = 30))+
   theme(panel.grid.major = element_line(size = 1.25),  # Ana ızgara çizgileri kalınlığı
-        panel.grid.minor = element_line(size = 1.00))  # Yardımcı ızgara çizgileri kalınlığı
+        panel.grid.minor = element_line(size = 1.00))  # Yardımcı ızgara çizgileri kalınlığı
 
 print(glob_samsung_plot)
 
@@ -64,12 +68,16 @@ print(glob_samsung_plot)
 glob_apple_plot <- data_apple %>% ggplot(aes(Date, Rate)) +
   geom_point(color = "black", size = 3) +
   theme_ipsum() +
-  scale_y_continuous(limits = c(0, 35)) +
+  scale_y_continuous(limits = c(0, 60)) +
   ggtitle("Apple's Global Dominance") +
   scale_x_discrete(breaks = c("2017-12", "2018-12", "2019-12", "2020-12", "2021-12", "2022-12")) + 
+  theme(axis.text.x = element_text(size = 26)) +
+  theme(axis.text.y = element_text(size = 29)) +
   theme(plot.title = element_text(color = "#A3AAAE", size = 48)) +
+  theme(axis.title.x = element_text(size = 30)) +     # X ekseni etiketi boyutu
+  theme(axis.title.y = element_text(size = 30)) +
   theme(panel.grid.major = element_line(size = 1.25),  # Ana ızgara çizgileri kalınlığı
-        panel.grid.minor = element_line(size = 1.00))  # Yardımcı ızgara çizgileri kalınlığı
+        panel.grid.minor = element_line(size = 1.00))  # Yardımcı ızgara çizgileri kalınlığı
 
 print(glob_apple_plot)
 
@@ -81,12 +89,16 @@ print(glob_apple_plot)
 glob_xiaomi_plot <- data_xiaomi %>% ggplot(aes(Date, Rate)) +
   geom_point(color = "black", size = 3) +
   theme_ipsum() +
-  scale_y_continuous(limits = c(0, 35)) +
+  scale_y_continuous(limits = c(0, 60)) +
   ggtitle("Xiaomi's Global Dominance") +
-  scale_x_discrete(breaks = c("2017-12", "2018-12", "2019-12", "2020-12", "2021-12", "2022-12")) + 
+  scale_x_discrete(breaks = c("2017-12", "2018-12", "2019-12", "2020-12", "2021-12", "2022-12")) +
+  theme(axis.text.x = element_text(size = 26)) +
+  theme(axis.text.y = element_text(size = 29)) +
+  theme(axis.title.x = element_text(size = 30)) +     # X ekseni etiketi boyutu
+  theme(axis.title.y = element_text(size = 30))+
   theme(plot.title = element_text(color = "#FF6900", size = 48)) +
   theme(panel.grid.major = element_line(size = 1.25),  # Ana ızgara çizgileri kalınlığı
-        panel.grid.minor = element_line(size = 1.00))  # Yardımcı ızgara çizgileri kalınlığı
+        panel.grid.minor = element_line(size = 1.00))  # Yardımcı ızgara çizgileri kalınlığı
 
 print(glob_xiaomi_plot)
 
@@ -105,7 +117,7 @@ glob_huawei_plot <- data_huawei %>% ggplot(aes(Date, Rate)) +
   theme(axis.title.y = element_text(size = 30))+
   theme(plot.title = element_text(color = "#CF0A2C", size = 48)) +
   theme(panel.grid.major = element_line(size = 1.25),  # Ana ızgara çizgileri kalınlığı
-        panel.grid.minor = element_line(size = 1.00))  # Yardımcı ızgara çizgileri kalınlığı
+        panel.grid.minor = element_line(size = 1.00))  # Yardımcı ızgara çizgileri kalınlığı
 
 print(glob_huawei_plot)
 
@@ -125,7 +137,7 @@ glob_oppo_plot <- data_oppo %>% ggplot(aes(Date, Rate)) +
   theme(axis.title.y = element_text(size = 30))+
   theme(plot.title = element_text(color = "#1EA366", size = 48)) +
   theme(panel.grid.major = element_line(size = 1.25),  # Ana ızgara çizgileri kalınlığı
-        panel.grid.minor = element_line(size = 1.00))  # Yardımcı ızgara çizgileri kalınlığı
+        panel.grid.minor = element_line(size = 1.00))  # Yardımcı ızgara çizgileri kalınlığı
 
 print(glob_oppo_plot)
 
@@ -145,7 +157,7 @@ glob_vivo_plot <- data_vivo %>% ggplot(aes(Date, Rate)) +
   theme(axis.title.y = element_text(size = 30))+
   theme(plot.title = element_text(color = "#0072B8", size = 48)) +
   theme(panel.grid.major = element_line(size = 1.25),  # Ana ızgara çizgileri kalınlığı
-        panel.grid.minor = element_line(size = 1.00))  # Yardımcı ızgara çizgileri kalınlığı
+        panel.grid.minor = element_line(size = 1.00))  # Yardımcı ızgara çizgileri kalınlığı
 
 print(glob_vivo_plot)
 
@@ -166,7 +178,7 @@ glob_lg_plot <- data_lg %>% ggplot(aes(Date, Rate)) +
   theme(axis.title.y = element_text(size = 30))+
   theme(plot.title = element_text(color = "#990033", size = 48)) +
   theme(panel.grid.major = element_line(size = 1.25),  # Ana ızgara çizgileri kalınlığı
-        panel.grid.minor = element_line(size = 1.00))  # Yardımcı ızgara çizgileri kalınlığı
+        panel.grid.minor = element_line(size = 1.00))  # Yardımcı ızgara çizgileri kalınlığı
 
 print(glob_lg_plot)
 
@@ -185,7 +197,7 @@ glob_htc_plot <- data_htc %>% ggplot(aes(Date, Rate)) +
   theme(axis.title.y = element_text(size = 30))+
   theme(plot.title = element_text(color = "#8CC751", size = 48)) +
   theme(panel.grid.major = element_line(size = 1.25),  # Ana ızgara çizgileri kalınlığı
-        panel.grid.minor = element_line(size = 1.00))  # Yardımcı ızgara çizgileri kalınlığı
+        panel.grid.minor = element_line(size = 1.00))  # Yardımcı ızgara çizgileri kalınlığı
 
 print(glob_htc_plot)
 
@@ -206,7 +218,7 @@ glob_other_plot <- data_other %>% ggplot(aes(Date, Rate)) +
   theme(axis.title.y = element_text(size = 30))+
   theme(plot.title = element_text(color = "#660099", size = 48)) +
   theme(panel.grid.major = element_line(size = 1.25),  # Ana ızgara çizgileri kalınlığı
-        panel.grid.minor = element_line(size = 1.00))  # Yardımcı ızgara çizgileri kalınlığı
+        panel.grid.minor = element_line(size = 1.00))  # Yardımcı ızgara çizgileri kalınlığı
 
 print(glob_other_plot)
 
@@ -226,7 +238,7 @@ glob_tecno_plot <- data_tecno %>% ggplot(aes(Date, Rate)) +
   theme(axis.title.y = element_text(size = 30))+
   theme(plot.title = element_text(color = "#006B8B", size = 48)) +
   theme(panel.grid.major = element_line(size = 1.25),  # Ana ızgara çizgileri kalınlığı
-        panel.grid.minor = element_line(size = 1.00))  # Yardımcı ızgara çizgileri kalınlığı
+        panel.grid.minor = element_line(size = 1.00))  # Yardımcı ızgara çizgileri kalınlığı
 
 print(glob_tecno_plot)
 
@@ -246,7 +258,7 @@ glob_sony_plot <- data_sony %>% ggplot(aes(Date, Rate)) +
   theme(axis.title.y = element_text(size = 30))+
   theme(plot.title = element_text(color = "black", size = 48)) +
   theme(panel.grid.major = element_line(size = 1.25),  # Ana ızgara çizgileri kalınlığı
-        panel.grid.minor = element_line(size = 1.00))  # Yardımcı ızgara çizgileri kalınlığı
+        panel.grid.minor = element_line(size = 1.00))  # Yardımcı ızgara çizgileri kalınlığı
 
 print(glob_sony_plot)
 
@@ -266,7 +278,7 @@ glob_realme_plot <- data_realme %>% ggplot(aes(Date, Rate)) +
   theme(axis.title.y = element_text(size = 30))+
   theme(plot.title = element_text(color = "#FFC916", size = 48)) +
   theme(panel.grid.major = element_line(size = 1.25),  # Ana ızgara çizgileri kalınlığı
-        panel.grid.minor = element_line(size = 1.00))  # Yardımcı ızgara çizgileri kalınlığı
+        panel.grid.minor = element_line(size = 1.00))  # Yardımcı ızgara çizgileri kalınlığı
 
 print(glob_realme_plot)
 
@@ -286,7 +298,7 @@ glob_google_plot <- data_google %>% ggplot(aes(Date, Rate)) +
   theme(axis.title.y = element_text(size = 30))+
   theme(plot.title = element_text(color = "#4285F4", size = 48)) +
   theme(panel.grid.major = element_line(size = 1.25),  # Ana ızgara çizgileri kalınlığı
-        panel.grid.minor = element_line(size = 1.00))  # Yardımcı ızgara çizgileri kalınlığı
+        panel.grid.minor = element_line(size = 1.00))  # Yardımcı ızgara çizgileri kalınlığı
 
 print(glob_google_plot)
 
@@ -332,7 +344,7 @@ data_tecno_tr <- new_data_sep_year_tr %>% filter(Brand == "Tecno")
 tr_samsung_plot <- data_samsung_tr %>% ggplot(aes(Date, Rate)) +
   geom_point(color = "black", size = 3) +
   theme_ipsum() +
-  scale_y_continuous(limits = c(0, 35)) +
+  scale_y_continuous(limits = c(0, 60)) +
   # theme(axis.text.x = element_blank()) +
   ggtitle("Samsung's Turkey Dominance") +
   scale_x_discrete(breaks = c("2017-12", "2018-12", "2019-12", "2020-12", "2021-12", "2022-12")) + 
@@ -346,8 +358,6 @@ tr_samsung_plot <- data_samsung_tr %>% ggplot(aes(Date, Rate)) +
 
 print(tr_samsung_plot)
 
-
-
 # ----------------------------------------------------
 
 #A3AAAE Apple
@@ -355,7 +365,7 @@ print(tr_samsung_plot)
 tr_apple_plot <- data_apple_tr %>% ggplot(aes(Date, Rate)) +
   geom_point(color = "black", size = 3) +
   theme_ipsum() +
-  scale_y_continuous(limits = c(0, 35)) +
+  scale_y_continuous(limits = c(0, 60)) +
   ggtitle("Apple's Turkey Dominance") +
   scale_x_discrete(breaks = c("2017-12", "2018-12", "2019-12", "2020-12", "2021-12", "2022-12")) + 
   theme(axis.text.x = element_text(size = 26)) +
@@ -376,7 +386,7 @@ print(tr_apple_plot)
 tr_xiaomi_plot <- data_xiaomi_tr %>% ggplot(aes(Date, Rate)) +
   geom_point(color = "black", size = 3) +
   theme_ipsum() +
-  scale_y_continuous(limits = c(0, 35)) +
+  scale_y_continuous(limits = c(0, 60)) +
   ggtitle("Xiaomi's Turkey Dominance") +
   scale_x_discrete(breaks = c("2017-12", "2018-12", "2019-12", "2020-12", "2021-12", "2022-12")) + 
   theme(axis.text.x = element_text(size = 26)) +
