@@ -12,6 +12,8 @@ library(openxlsx)
 
 #fdatason <- read_excel("GitHub/emu430-fall2023-team-ctrl_s/vendordatason.xlsx")
 
+
+
 new_data <- read_excel("GitHub/emu430-fall2023-team-ctrl_s/new_data.xlsx")
 
 new_data_sep_year <- new_data %>% separate(Date, c("Year","Month"), "-", remove = FALSE)
@@ -230,7 +232,7 @@ glob_tecno_plot <- data_tecno %>% ggplot(aes(Date, Rate)) +
   geom_point(color = "black", size = 3) +
   theme_ipsum() +
   scale_y_continuous(limits = c(0, 15)) +
-  ggtitle("HTC's Global Dominance") +
+  ggtitle("Tecno's Global Dominance") +
   scale_x_discrete(breaks = c("2017-12", "2018-12", "2019-12", "2020-12", "2021-12", "2022-12")) + 
   theme(axis.text.x = element_text(size = 26)) +
   theme(axis.text.y = element_text(size = 29)) +
