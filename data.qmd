@@ -4,86 +4,27 @@ format: html
 editor: visual
 ---
 
-```{r}
-library(readr) 
-library(readxl) 
-library(utf8) 
-library(ggplot2) 
-library(tidyverse) 
-library(hrbrthemes) 
-library(ggthemes) 
-library(ggplot2)
-```
+**About the Data**
 
-Telefon üreticisi firmaların 2017 yılından bu yana dünya ve Türkiye pazarlarındaki aylık aktivite verilerini datamızda kullandık. Kullandığımız bu verileri dünya ve Türkiye olarak ikiye ayırdık. Verilerimizi Global Stats Stat Counter isimli siteden global ve türkiye olmak üzere iki farklı başlıkta topladık. Projemizde bu konuyu incelememizin sebebi, teknoloji pazarındaki yüksek rekabeti ve pek çok firmanın bu pazarda hakimiyetlerini artırmak için yıllar içerisinde uyguladıkları stratejileri, verilere dayanarak gözlemleyebilmektir. Bu proje çalışmasıyla amaçladığımız husus Süregelen yıllarda hangi firmaların çıkışa geçtiğini hangilerinin yok olup gittiğini grafiklere dayanarak karşılaştırabilmektir.
+In this project, we analyze the dominance of phone brands in the global and Turkish markets since 2017. Our data is obtained from an Excel file located on GitHub. We chose this dataset because it shows how the market dominance of brands has changed over time. Our goal is to visualize and analyze the changes in market share of brands using this data.
 
-Datayı okutmak için aşağıdaki kütüphaneleri ve kodları kullandık.
+**Data Import and Preprocessing**
+
+We read the data from the Excel file using the **`readxl`** library. Then, we separated the \'Date\' column into \'Year\' and \'Month\' columns using the **`separate`** function of the **`tidyverse`** library. Finally, we created a separate data frame for each brand.
 
 ```{r}
- # install.packages("readr") 
- library(readr) 
- # install.packages("readxl") 
- library(readxl) 
- # install.packages("utf8") 
- library(utf8) 
- library(ggplot2) 
- library(tidyverse) 
- # install.packages("hrbrthemes") 
- library(hrbrthemes) 
- # install.packages("ggthemes") 
- library(ggthemes) 
- library(ggplot2)
-```
-
-Daha sonrasında yılları, kendi içlerinde aylara ayırabilmek için aşağıdaki kodu kullandık.
-
-```{r}
-new_data_sep_year <- new_data %>% separate(Date, c("Year","Month"), "-", remove = FALSE)
-```
-
-devamında veri setlerini markalara göre filtreleyebilmek amacıyla 'filter' kodunu kullandık.
-
-```{r}
-data_samsung <- new_data_sep_year %>% filter(Brand == "Samsung")
-data_apple <- new_data_sep_year %>% filter(Brand == "Apple")
-data_xiaomi <- new_data_sep_year %>% filter(Brand == "Xiaomi")
-data_huawei <- new_data_sep_year %>% filter(Brand == "Huawei")
-data_oppo <- new_data_sep_year %>% filter(Brand == "Oppo")
-data_unknown <- new_data_sep_year %>% filter(Brand == "Unknown")
-data_lg <- new_data_sep_year %>% filter(Brand == "LG")
-data_vivo <- new_data_sep_year %>% filter(Brand == "Vivo")
-data_nokia <- new_data_sep_year %>% filter(Brand == "Nokia")
-data_realme <- new_data_sep_year %>% filter(Brand == "Realme")
-data_sony <- new_data_sep_year %>% filter(Brand == "Sony")
-data_oneplus <- new_data_sep_year %>% filter(Brand == "OnePlus")
-data_htc <- new_data_sep_year %>% filter(Brand == "HTC")
-data_other <- new_data_sep_year %>% filter(Brand == "Other")
-data_tecno <- new_data_sep_year %>% filter(Brand == "Tecno")
+new_data <- read_excel("GitHub/emu430-fall2023-team-ctrl_s/new_data.xlsx") new_data_sep_year <- new_data %>% separate(Date, c("Year","Month"), "-", remove = FALSE) data_samsung <- new_data_sep_year %>% filter(Brand == "Samsung") ... 
 
 ```
 
-Her marka için nokta grafiklerini oluşturmak ve verileri daha detaylı gözlemleyebilmek için aşağıdaki tablo oluşturma kodlarını kullandık. Bu kod sayesinde tek grafikte tüm markaları gözlemleyebildik.
+**Exploratory Data Analysis** Our dataset shows the market share of various phone brands at a specific date. We created a separate data frame for each brand and analyzed each one separately. For example, we created graphs showing the dominance of Samsung in the global and Turkish markets.
 
 ```{r}
-new_data_sep_year_plot <- new_data_sep_year %>% ggplot(aes(Date, Rate)) + geom_point(aes(color = Brand)) + theme_ipsum() + theme(axis.text.x = element_blank()) + ggtitle("Global Dominance")
+glob_samsung_plot <- data_samsung %>% ggplot(aes(Date, Rate)) 
+print(glob_samsung_plot) tr_samsung_plot <- data_samsung_tr %>% ggplot(aes(Date, Rate)) 
+
 ```
 
-Her bir markayı ayrı ayrı grafiklendirebilmek için ise aşağıdaki kod yardımıyla tablolar oluşturduk. Aşağıdaki kod Samsung markası örneğidir. Grafikte okunabilirliği arttırmak amacıyla en üst seviye markaların scale'ını 60 olarak gösterdik.
+This code snippet shows the graphs created for Samsung. Similarly, we created graphs for other brands. These graphs show the changes in the market share of each brand over time.
 
-```{r}
-glob_samsung_plot <- data_samsung %>% ggplot(aes(Date, Rate)) +
-  geom_point(color = "black", size = 3) +
-  theme_ipsum() +
-  scale_y_continuous(limits = c(0, 60)) +
-  ggtitle("Samsung's Global Dominance") +
-  scale_x_discrete(breaks = c("2017-12", "2018-12", "2019-12", "2020-12", "2021-12", "2022-12")) +
-  theme(axis.text.x = element_text(size = 26)) +
-  theme(axis.text.y = element_text(size = 29)) +
-  theme(plot.title = element_text(color = "#0c4da2", size = 48)) +
-  theme(axis.title.x = element_text(size = 30)) +
-  theme(axis.title.y = element_text(size = 30))+
-  theme(panel.grid.major = element_line(size = 1.25),
-        panel.grid.minor = element_line(size = 1.00)) 
-
-print(glob_samsung_plot)
-```
+This code is repeated for each brand in our dataset. This allows us to analyze the changes in market share of each brand separately. This helps us better understand the market dynamics of the brands. These analyses will help us determine which brands are stronger in the market and which brands have increased or decreased their market share. This information is very valuable for predicting market trends and understanding future market dynamics. Therefore, the foundation of this code will be constantly repeated. This is important for optimizing the data analysis process. This makes our data more meaningful and useful.
