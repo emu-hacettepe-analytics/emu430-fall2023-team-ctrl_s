@@ -17,6 +17,15 @@ new_data <- read_excel("GitHub/emu430-fall2023-team-ctrl_s/new_data.xlsx") new_d
 
 ```
 
+To be able to visualize each brand separately, we created tables using the code below. The following code is an example for the Samsung brand. To improve readability in the graph, we set the scale of the top-level brands to 35.
+
+```{r}
+data_samsung %>% ggplot(aes(Date, Rate)) + geom_point(color = "black", size = 3) + theme_ipsum() + scale_y_continuous(limits = c(0, 35)) + # theme(axis.text.x = element_blank()) + ggtitle("Samsung's Global Dominance") + scale_x_discrete(breaks = c("2017-12", "2018-12", "2019-12", "2020-12", "2021-12", "2022-12")) + theme(plot.title = element_text(color = "#0c4da2", size = 35))
+
+
+
+```
+
 **Exploratory Data Analysis** Our dataset shows the market share of various phone brands at a specific date. We created a separate data frame for each brand and analyzed each one separately. For example, we created graphs showing the dominance of Samsung in the global and Turkish markets.
 
 ```{r}
