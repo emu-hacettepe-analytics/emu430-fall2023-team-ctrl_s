@@ -45,7 +45,7 @@ new_data_sep_year <- new_data %>% separate(Date, c("Year","Month"), "-", remove 
 new_data_sep_year$Date <- ym(new_data_sep_year$Date)
 ```
 
-# \*\* Data Separation by Brand\*\*
+# Data Separation by Brand
 
 In this section, we created separate data frames for each brand in our 'new_data_sep_year' data frame. This allows us to perform individual analyses for each brand. The code provided below is specific to Samsung, Apple, and Xiaomi. The same structure has been implemented for all other brands as well.
 
@@ -75,7 +75,7 @@ data_tecno <- new_data_sep_year %>% filter(Brand == "Tecno")
 
 ```
 
-# \*\* Samsung's Global Dominance Graph\*\*
+# Samsung's Global Dominance Graph
 
 In this section, we created a graph using the dates and rates from our 'data_samsung' data frame. This graph illustrates Samsung's global dominance. The code structure used in this example has been repeated for all other brands as well.
 
@@ -134,7 +134,7 @@ glob_xiaomi_plot <- data_xiaomi %>% ggplot(aes(Date, Rate)) +
         panel.grid.minor = element_line(size = 1.00))  # Yardımcı ızgara çizgileri kalınlığı
 ```
 
-# \*\* Turkish Market\*\*
+# Turkish Market
 
 In this section, we loaded the necessary datasets for the Turkish market and processed the date information. The function of each code block is specified below:
 
@@ -150,7 +150,7 @@ new_data_sep_year_tr$Date <- ym(new_data_sep_year_tr$Date)
 
 ```
 
-# \*\* Brand-Based Data Separation for the Turkish Market\*\*
+# Brand-Based Data Separation for the Turkish Market
 
 In this section, we created separate data frames for each brand in our 'new_data_sep_year_tr' data frame. This allows us to perform distinct analyses for each brand in the Turkish market. The code provided below is specific to Samsung, Apple, and Xiaomi. The same structure has been implemented for all other brands as well.
 
@@ -183,7 +183,7 @@ data_other_tr <- new_data_sep_year_tr %>% filter(Brand == "Other")
 data_tecno_tr <- new_data_sep_year_tr %>% filter(Brand == "Tecno")
 ```
 
-# \*\* Samsung's Dominance Graph in Turkey\*\*
+# Samsung's Dominance Graph in Turkey
 
 In this section, we created a graph using the 'data_samsung_tr' data frame, showcasing the date and rates. This graph illustrates Samsung's dominance in the Turkish market. The code structure used in this example has been repeated for all other brands as well.
 
@@ -242,7 +242,7 @@ tr_xiaomi_plot <- data_xiaomi_tr %>% ggplot(aes(Date, Rate)) +
 
 ```
 
-# \*\* Combining Graphs to Compare Samsung's Performance in Global and Turkish Markets\*\*
+# Combining Graphs to Compare Samsung's Performance in Global and Turkish Markets
 
 In this section, we combine two graphs to compare Samsung's performance in both the global and Turkish markets. The same structure has been implemented for all other brands as well.
 
@@ -301,7 +301,7 @@ print(compare_glob_five)
 
 ![](compared_graphs_final/compare_glob_five.png)
 
-# \*\* Creating a Comparison Graph for Multiple Brands in the Turkey Market\*\*
+# Creating a Comparison Graph for Multiple Brands in the Turkey Market
 
 In this section, we use ggplot to create a line graph that compares the performance of multiple brands (Samsung, Apple, Xiaomi, Huawei, Oppo) in the Turkey market. The similar structure was used for the other two graphs, which involve 10 brands and 15 brands, respectively.
 
