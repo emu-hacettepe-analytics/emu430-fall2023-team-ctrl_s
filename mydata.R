@@ -824,17 +824,18 @@ print(nokia_compare_globtr)
 
 
 compare_glob_five <- ggplot() +
-  geom_line(data = data_samsung, aes(x = Date, y = Rate, color = "Samsung"), size = 1) +
-  geom_line(data = data_apple, aes(x = Date, y = Rate, color = "Apple"), size = 1) +
-  geom_line(data = data_xiaomi, aes(x = Date, y = Rate, color = "Xiaomi"), size = 1) +
-  geom_line(data = data_huawei, aes(x = Date, y = Rate, color = "Huawei"), size = 1) +
-  geom_line(data = data_oppo, aes(x = Date, y = Rate, color = "Oppo"), size = 1) +
+  geom_line(data = data_samsung, aes(x = Date, y = Rate, color = "Samsung"), size = 2) +
+  geom_line(data = data_apple, aes(x = Date, y = Rate, color = "Apple"), size = 2) +
+  geom_line(data = data_xiaomi, aes(x = Date, y = Rate, color = "Xiaomi"), size = 2) +
+  geom_line(data = data_huawei, aes(x = Date, y = Rate, color = "Huawei"), size = 2) +
+  geom_line(data = data_oppo, aes(x = Date, y = Rate, color = "Oppo"), size = 2) +
   scale_x_date(date_labels = "20%y-%m", date_breaks = "12 months") +
   theme_ipsum() +
   scale_color_manual(values = c("Samsung" = "blue", "Apple" = "red",
                                 "Xiaomi" = "green", "Huawei" = "yellow", "Oppo" = "purple")) +
   labs(title = "Brands", color = "Brand") +
   ggtitle("Global Market Percentages") +
+  theme(legend.text = element_text(size = 20)) +
   theme(axis.text.x = element_text(size = 26)) +
   theme(axis.text.y = element_text(size = 29)) +
   theme(plot.title = element_text(color = "#0c4da2", size = 48)) +
@@ -846,17 +847,18 @@ compare_glob_five <- ggplot() +
 print(compare_glob_five)
 
 compare_glob_ten <- ggplot() +
-  geom_line(data = data_unknown, aes(x = Date, y = Rate, color = "Unknown"), size = 1) +
-  geom_line(data = data_lg, aes(x = Date, y = Rate, color = "LG"), size = 1) +
-  geom_line(data = data_vivo, aes(x = Date, y = Rate, color = "Vivo"), size = 1) +
-  geom_line(data = data_nokia, aes(x = Date, y = Rate, color = "Nokia"), size = 1) +
-  geom_line(data = data_realme, aes(x = Date, y = Rate, color = "Realme"), size = 1) +
+  geom_line(data = data_unknown, aes(x = Date, y = Rate, color = "Unknown"), size = 2) +
+  geom_line(data = data_lg, aes(x = Date, y = Rate, color = "LG"), size = 2) +
+  geom_line(data = data_vivo, aes(x = Date, y = Rate, color = "Vivo"), size = 2) +
+  geom_line(data = data_nokia, aes(x = Date, y = Rate, color = "Nokia"), size = 2) +
+  geom_line(data = data_realme, aes(x = Date, y = Rate, color = "Realme"), size = 2) +
   scale_x_date(date_labels = "20%y-%m", date_breaks = "12 months") +
   theme_ipsum() +
   scale_color_manual(values = c("Unknown" = "blue", "LG" = "red",
                                 "Vivo" = "green", "Nokia" = "yellow", "Realme" = "purple")) +
   labs(title = "Brands", color = "Brand") +
   ggtitle("Global Market Percentages") +
+  theme(legend.text = element_text(size = 20)) +
   theme(axis.text.x = element_text(size = 26)) +
   theme(axis.text.y = element_text(size = 29)) +
   theme(plot.title = element_text(color = "#0c4da2", size = 48)) +
@@ -868,17 +870,18 @@ compare_glob_ten <- ggplot() +
 print(compare_glob_ten)
 
 compare_glob_fifteen <- ggplot() +
-  geom_line(data = data_sony, aes(x = Date, y = Rate, color = "Sony"), size = 1) +
-  geom_line(data = data_oneplus, aes(x = Date, y = Rate, color = "OnePlus"), size = 1) +
-  geom_line(data = data_htc, aes(x = Date, y = Rate, color = "HTC"), size = 1) +
-  geom_line(data = data_other, aes(x = Date, y = Rate, color = "Other"), size = 1) +
-  geom_line(data = data_tecno, aes(x = Date, y = Rate, color = "Tecno"), size = 1) +
+  geom_line(data = data_sony, aes(x = Date, y = Rate, color = "Sony"), size = 2) +
+  geom_line(data = data_oneplus, aes(x = Date, y = Rate, color = "OnePlus"), size = 2) +
+  geom_line(data = data_htc, aes(x = Date, y = Rate, color = "HTC"), size = 2) +
+  geom_line(data = data_other, aes(x = Date, y = Rate, color = "Other"), size = 2) +
+  geom_line(data = data_tecno, aes(x = Date, y = Rate, color = "Tecno"), size = 2) +
   scale_x_date(date_labels = "20%y-%m", date_breaks = "12 months") +
   theme_ipsum() +
   scale_color_manual(values = c("Sony" = "blue", "OnePlus" = "red",
                                 "HTC" = "green", "Other" = "yellow", "Tecno" = "purple")) +
   labs(title = "Brands", color = "Brand") +
   ggtitle("Global Market Percentages") +
+  theme(legend.text = element_text(size = 20)) +
   theme(axis.text.x = element_text(size = 26)) +
   theme(axis.text.y = element_text(size = 29)) +
   theme(plot.title = element_text(color = "#0c4da2", size = 48)) +
@@ -893,17 +896,18 @@ print(compare_glob_fifteen)
 #---------------------TR-------------------------
 
 compare_tr_five <- ggplot() +
-  geom_line(data = data_samsung_tr, aes(x = Date, y = Rate, color = "Samsung"), size = 1) +
-  geom_line(data = data_apple_tr, aes(x = Date, y = Rate, color = "Apple"), size = 1) +
-  geom_line(data = data_xiaomi_tr, aes(x = Date, y = Rate, color = "Xiaomi"), size = 1) +
-  geom_line(data = data_huawei_tr, aes(x = Date, y = Rate, color = "Huawei"), size = 1) +
-  geom_line(data = data_oppo_tr, aes(x = Date, y = Rate, color = "Oppo"), size = 1) +
+  geom_line(data = data_samsung_tr, aes(x = Date, y = Rate, color = "Samsung"), size = 2) +
+  geom_line(data = data_apple_tr, aes(x = Date, y = Rate, color = "Apple"), size = 2) +
+  geom_line(data = data_xiaomi_tr, aes(x = Date, y = Rate, color = "Xiaomi"), size = 2) +
+  geom_line(data = data_huawei_tr, aes(x = Date, y = Rate, color = "Huawei"), size = 2) +
+  geom_line(data = data_oppo_tr, aes(x = Date, y = Rate, color = "Oppo"), size = 2) +
   scale_x_date(date_labels = "20%y-%m", date_breaks = "12 months") +
   theme_ipsum() +
   scale_color_manual(values = c("Samsung" = "blue", "Apple" = "red",
                                 "Xiaomi" = "green", "Huawei" = "yellow", "Oppo" = "purple")) +
   labs(title = "Brands", color = "Brand") +
-  ggtitle("Türkiye Market Percentages") +
+  ggtitle("Turkey Market Percentages") +
+  theme(legend.text = element_text(size = 20)) +
   theme(axis.text.x = element_text(size = 26)) +
   theme(axis.text.y = element_text(size = 29)) +
   theme(plot.title = element_text(color = "#0c4da2", size = 48)) +
@@ -915,17 +919,18 @@ compare_tr_five <- ggplot() +
 print(compare_tr_five)
 
 compare_tr_ten <- ggplot() +
-  geom_line(data = data_unknown_tr, aes(x = Date, y = Rate, color = "Unknown"), size = 1) +
-  geom_line(data = data_lg_tr, aes(x = Date, y = Rate, color = "LG"), size = 1) +
-  geom_line(data = data_vivo_tr, aes(x = Date, y = Rate, color = "Vivo"), size = 1) +
-  geom_line(data = data_nokia_tr, aes(x = Date, y = Rate, color = "Nokia"), size = 1) +
-  geom_line(data = data_realme_tr, aes(x = Date, y = Rate, color = "Realme"), size = 1) +
+  geom_line(data = data_unknown_tr, aes(x = Date, y = Rate, color = "Unknown"), size = 2) +
+  geom_line(data = data_lg_tr, aes(x = Date, y = Rate, color = "LG"), size = 2) +
+  geom_line(data = data_vivo_tr, aes(x = Date, y = Rate, color = "Vivo"), size = 2) +
+  geom_line(data = data_nokia_tr, aes(x = Date, y = Rate, color = "Nokia"), size = 2) +
+  geom_line(data = data_realme_tr, aes(x = Date, y = Rate, color = "Realme"), size = 2) +
   scale_x_date(date_labels = "20%y-%m", date_breaks = "12 months") +
   theme_ipsum() +
   scale_color_manual(values = c("Unknown" = "blue", "LG" = "red",
                                 "Vivo" = "green", "Nokia" = "yellow", "Realme" = "purple")) +
   labs(title = "Brands", color = "Brand") +
-  ggtitle("Türkiye Market Percentages") +
+  ggtitle("Turkey Market Percentages") +
+  theme(legend.text = element_text(size = 20)) +
   theme(axis.text.x = element_text(size = 26)) +
   theme(axis.text.y = element_text(size = 29)) +
   theme(plot.title = element_text(color = "#0c4da2", size = 48)) +
@@ -937,17 +942,18 @@ compare_tr_ten <- ggplot() +
 print(compare_tr_ten)
 
 compare_tr_fifteen <- ggplot() +
-  geom_line(data = data_sony_tr, aes(x = Date, y = Rate, color = "Sony"), size = 1) +
-  geom_line(data = data_oneplus_tr, aes(x = Date, y = Rate, color = "OnePlus"), size = 1) +
-  geom_line(data = data_htc_tr, aes(x = Date, y = Rate, color = "HTC"), size = 1) +
-  geom_line(data = data_other_tr, aes(x = Date, y = Rate, color = "Other"), size = 1) +
-  geom_line(data = data_tecno_tr, aes(x = Date, y = Rate, color = "Tecno"), size = 1) +
+  geom_line(data = data_sony_tr, aes(x = Date, y = Rate, color = "Sony"), size = 2) +
+  geom_line(data = data_oneplus_tr, aes(x = Date, y = Rate, color = "OnePlus"), size = 2) +
+  geom_line(data = data_htc_tr, aes(x = Date, y = Rate, color = "HTC"), size = 2) +
+  geom_line(data = data_other_tr, aes(x = Date, y = Rate, color = "Other"), size = 2) +
+  geom_line(data = data_tecno_tr, aes(x = Date, y = Rate, color = "Tecno"), size = 2) +
   scale_x_date(date_labels = "20%y-%m", date_breaks = "12 months") +
   theme_ipsum() +
   scale_color_manual(values = c("Sony" = "blue", "OnePlus" = "red",
                                 "HTC" = "green", "Other" = "yellow", "Tecno" = "purple")) +
   labs(title = "Brands", color = "Brand") +
-  ggtitle("Türkiye Market Percentages") +
+  ggtitle("Turkey Market Percentages") +
+  theme(legend.text = element_text(size = 20)) +
   theme(axis.text.x = element_text(size = 26)) +
   theme(axis.text.y = element_text(size = 29)) +
   theme(plot.title = element_text(color = "#0c4da2", size = 48)) +
