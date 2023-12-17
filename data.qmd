@@ -7,6 +7,7 @@ editor: visual
 # **Libraries**
 
 In this section, we have loaded the libraries required for our project. The function of each library is specified below:
+
 ```{r, echo=FALSE}
 options(warn = -1)
 ```
@@ -206,7 +207,7 @@ tr_samsung_plot <- data_samsung_tr %>% ggplot(aes(Date, Rate)) +
 print(tr_samsung_plot)
 ```
 
-![](Solo Graphs ( Global )/samsung_turkey_dominance.png){width="695" height="337"}
+![](Solo%20Graphs%20(%20Global%20)/samsung_turkey_dominance.png){width="686" height="413"}
 
 ```{r}
 # Creating the same graph for Apple
