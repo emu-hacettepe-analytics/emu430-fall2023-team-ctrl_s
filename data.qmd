@@ -7,8 +7,12 @@ editor: visual
 # **Libraries**
 
 In this section, we have loaded the libraries required for our project. The function of each library is specified below:
+```{r, echo=FALSE}
+options(warn = -1)
+```
 
-```{r}
+```{r, warning=FALSE,  message=FALSE}
+
 library(readr)     # For data reading operations
 library(readxl)    # For reading Excel files
 library(utf8)      # For UTF-8 text processing
@@ -20,7 +24,6 @@ library(patchwork) # For combining ggplot2 graphics
 library(tidyr)     # For data cleaning
 library(openxlsx)  # For reading and writing Excel files
 library(lubridate) # For date and time operations
-
 ```
 
 # **Data Loading and Processing**
@@ -29,10 +32,10 @@ In this section, we loaded the datasets required for our project and processed t
 
 ```{r}
 # We read the 'vendordatason.xlsx' file to create the 'fdatason' data frame.
-fdatason <- read_excel("GitHub/emu430-fall2023-team-ctrl_s/vendordatason.xlsx")
+#fdatason <- read_excel("GitHub/emu430-fall2023-team-ctrl_s/vendordatason.xlsx")
 
 # We read the 'new_data.xlsx' file to create the 'new_data' data frame.
-new_data <- read_excel("GitHub/emu430-fall2023-team-ctrl_s/new_data.xlsx")
+new_data <- read_excel("new_data.xlsx")
 
 # We separated the 'Date' column into 'Year' and 'Month' columns.
 new_data_sep_year <- new_data %>% separate(Date, c("Year","Month"), "-", remove = FALSE)
@@ -45,7 +48,7 @@ new_data_sep_year$Date <- ym(new_data_sep_year$Date)
 
 In this section, we created separate data frames for each brand in our 'new_data_sep_year' data frame. This allows us to perform individual analyses for each brand. The code provided below is specific to Samsung, Apple, and Xiaomi. The same structure has been implemented for all other brands as well.
 
-```{r}
+```{r echo = TRUE, results = "hide"}
 # Creating a data frame for the Samsung brand
 data_samsung <- new_data_sep_year %>% filter(Brand == "Samsung") 
 
@@ -55,13 +58,27 @@ data_apple <- new_data_sep_year %>% filter(Brand == "Apple")
 # Creating a data frame for the Xiaomi brand
 data_xiaomi <- new_data_sep_year %>% filter(Brand == "Xiaomi")
 
+#Creating data frames for the other brads
+data_huawei <- new_data_sep_year %>% filter(Brand == "Huawei")
+data_oppo <- new_data_sep_year %>% filter(Brand == "Oppo")
+data_unknown <- new_data_sep_year %>% filter(Brand == "Unknown")
+data_lg <- new_data_sep_year %>% filter(Brand == "LG")
+data_vivo <- new_data_sep_year %>% filter(Brand == "Vivo")
+data_nokia <- new_data_sep_year %>% filter(Brand == "Nokia")
+data_realme <- new_data_sep_year %>% filter(Brand == "Realme")
+data_sony <- new_data_sep_year %>% filter(Brand == "Sony")
+data_oneplus <- new_data_sep_year %>% filter(Brand == "OnePlus")
+data_htc <- new_data_sep_year %>% filter(Brand == "HTC")
+data_other <- new_data_sep_year %>% filter(Brand == "Other")
+data_tecno <- new_data_sep_year %>% filter(Brand == "Tecno")
+
 ```
 
 # \*\* Samsung's Global Dominance Graph\*\*
 
 In this section, we created a graph using the dates and rates from our 'data_samsung' data frame. This graph illustrates Samsung's global dominance. The code structure used in this example has been repeated for all other brands as well.
 
-```{r}
+```{r, fig.show='hide'}
 # Creating a graph with ggplot
 glob_samsung_plot <- data_samsung %>% ggplot(aes(Date, Rate)) +
   geom_point(color = "black", size = 3) +  # Plotting points in black color with size 3
@@ -76,10 +93,44 @@ glob_samsung_plot <- data_samsung %>% ggplot(aes(Date, Rate)) +
   theme(axis.title.y = element_text(size = 30)) +  # Setting the size of the y-axis title
   theme(panel.grid.major = element_line(size = 1.25),  # Setting the thickness of major grid lines
         panel.grid.minor = element_line(size = 1.00))  # Setting the thickness of minor grid lines
-
 # Printing the graph
 print(glob_samsung_plot)
 
+
+```
+
+![](Solo%20Graphs%20(%20Global%20)/Rplot-global-samsung.png)
+
+```{r}
+# Creating the same graph for Apple
+glob_apple_plot <- data_apple %>% ggplot(aes(Date, Rate)) +
+  geom_point(color = "black", size = 3) +
+  theme_ipsum() +
+  scale_y_continuous(limits = c(0, 60)) +
+  ggtitle("Apple's Global Dominance") +
+  scale_x_date(date_labels = "20%y-%m", date_breaks = "12 months") + 
+  theme(axis.text.x = element_text(size = 26)) +
+  theme(axis.text.y = element_text(size = 29)) +
+  theme(plot.title = element_text(color = "#A3AAAE", size = 48)) +
+  theme(axis.title.x = element_text(size = 30)) +     # X ekseni etiketi boyutu
+  theme(axis.title.y = element_text(size = 30)) +
+  theme(panel.grid.major = element_line(size = 1.25),  # Ana ızgara çizgileri kalınlığı
+        panel.grid.minor = element_line(size = 1.00))  # Yardımcı ızgara çizgileri kalınlığı
+
+# Creating the same graph for Xiaomi
+glob_xiaomi_plot <- data_xiaomi %>% ggplot(aes(Date, Rate)) +
+  geom_point(color = "black", size = 3) +
+  theme_ipsum() +
+  scale_y_continuous(limits = c(0, 60)) +
+  ggtitle("Xiaomi's Global Dominance") +
+  scale_x_date(date_labels = "20%y-%m", date_breaks = "12 months") +
+  theme(axis.text.x = element_text(size = 26)) +
+  theme(axis.text.y = element_text(size = 29)) +
+  theme(axis.title.x = element_text(size = 30)) +     # X ekseni etiketi boyutu
+  theme(axis.title.y = element_text(size = 30))+
+  theme(plot.title = element_text(color = "#FF6900", size = 48)) +
+  theme(panel.grid.major = element_line(size = 1.25),  # Ana ızgara çizgileri kalınlığı
+        panel.grid.minor = element_line(size = 1.00))  # Yardımcı ızgara çizgileri kalınlığı
 ```
 
 # \*\* Turkish Market\*\*
@@ -88,7 +139,7 @@ In this section, we loaded the necessary datasets for the Turkish market and pro
 
 ```{r}
 # Reading the 'new_data_tr.xlsx' file to create the 'new_data_tr' data frame.
-new_data_tr <- read_excel("GitHub/emu430-fall2023-team-ctrl_s/new_data_tr.xlsx")
+new_data_tr <- read_excel("new_data_tr.xlsx")
 
 # Separating the 'Date' column into 'Year' and 'Month' columns.
 new_data_sep_year_tr <- new_data_tr %>% separate(Date, c("Year","Month"), "-", remove = FALSE)
@@ -111,13 +162,31 @@ data_apple_tr <- new_data_sep_year_tr %>% filter(Brand == "Apple")
 
 # Creating a data frame for the Xiaomi brand in the Turkish market
 data_xiaomi_tr <- new_data_sep_year_tr %>% filter(Brand == "Xiaomi")
+
+# Creating data frames for other brands
+data_huawei_tr <- new_data_sep_year_tr %>% filter(Brand == "Huawei")
+data_oppo_tr <- new_data_sep_year_tr %>% filter(Brand == "Oppo")
+data_unknown_tr <- new_data_sep_year_tr %>% filter(Brand == "Unknown")
+data_motorola_tr <- new_data_sep_year_tr %>% filter(Brand == "Motorola")
+data_lg_tr <- new_data_sep_year_tr %>% filter(Brand == "LG")
+data_lenovo_tr <- new_data_sep_year_tr %>% filter(Brand == "Lenovo")
+data_vivo_tr <- new_data_sep_year_tr %>% filter(Brand == "Vivo")
+data_nokia_tr <- new_data_sep_year_tr %>% filter(Brand == "Nokia")
+data_realme_tr <- new_data_sep_year_tr %>% filter(Brand == "Realme")
+data_sony_tr <- new_data_sep_year_tr %>% filter(Brand == "Sony")
+data_asus_tr <- new_data_sep_year_tr %>% filter(Brand == "Asus")
+data_oneplus_tr <- new_data_sep_year_tr %>% filter(Brand == "OnePlus")
+data_htc_tr <- new_data_sep_year_tr %>% filter(Brand == "HTC")
+data_google_tr <- new_data_sep_year_tr %>% filter(Brand == "Google")
+data_other_tr <- new_data_sep_year_tr %>% filter(Brand == "Other")
+data_tecno_tr <- new_data_sep_year_tr %>% filter(Brand == "Tecno")
 ```
 
 # \*\* Samsung's Dominance Graph in Turkey\*\*
 
 In this section, we created a graph using the 'data_samsung_tr' data frame, showcasing the date and rates. This graph illustrates Samsung's dominance in the Turkish market. The code structure used in this example has been repeated for all other brands as well.
 
-```{r}
+```{r, fig.show='hide'}
 # Creating a graph using ggplot
 tr_samsung_plot <- data_samsung_tr %>% ggplot(aes(Date, Rate)) +
   geom_point(color = "black", size = 3) +  # Plotting points in black color with a size of 3
@@ -135,6 +204,40 @@ tr_samsung_plot <- data_samsung_tr %>% ggplot(aes(Date, Rate)) +
 
 # Printing the graph
 print(tr_samsung_plot)
+```
+
+![](Solo Graphs ( Global )/samsung_turkey_dominance.png){width="695" height="337"}
+
+```{r}
+# Creating the same graph for Apple
+tr_apple_plot <- data_apple_tr %>% ggplot(aes(Date, Rate)) +
+  geom_point(color = "black", size = 3) +
+  theme_ipsum() +
+  scale_y_continuous(limits = c(0, 60)) +
+  ggtitle("Apple's Turkey Dominance") +
+  scale_x_date(date_labels = "20%y-%m", date_breaks = "12 months") + 
+  theme(axis.text.x = element_text(size = 26)) +
+  theme(axis.text.y = element_text(size = 29)) +
+  theme(axis.title.x = element_text(size = 30)) +     # X ekseni etiketi boyutu
+  theme(axis.title.y = element_text(size = 30))+
+  theme(plot.title = element_text(color = "#A3AAAE", size = 48)) +
+  theme(panel.grid.major = element_line(size = 1.25),  # Ana ızgara çizgileri kalınlığı
+        panel.grid.minor = element_line(size = 1.00))  # Yardımcı ızgara çizgileri kalınlığı
+
+# Creating the same graph for Xiaomi
+tr_xiaomi_plot <- data_xiaomi_tr %>% ggplot(aes(Date, Rate)) +
+  geom_point(color = "black", size = 3) +
+  theme_ipsum() +
+  scale_y_continuous(limits = c(0, 60)) +
+  ggtitle("Xiaomi's Turkey Dominance") +
+  scale_x_date(date_labels = "20%y-%m", date_breaks = "12 months") + 
+  theme(axis.text.x = element_text(size = 26)) +
+  theme(axis.text.y = element_text(size = 29)) +
+  theme(axis.title.x = element_text(size = 30)) +     # X ekseni etiketi boyutu
+  theme(axis.title.y = element_text(size = 30))+
+  theme(plot.title = element_text(color = "#FF6900", size = 48)) +
+  theme(panel.grid.major = element_line(size = 1.25),  # Ana ızgara çizgileri kalınlığı
+        panel.grid.minor = element_line(size = 1.00))  # Yardımcı ızgara çizgileri kalınlığı
 
 ```
 
@@ -142,29 +245,35 @@ print(tr_samsung_plot)
 
 In this section, we combine two graphs to compare Samsung's performance in both the global and Turkish markets. The same structure has been implemented for all other brands as well.
 
-```{r}
+```{r, fig.show='hide'}
 # Combining the graphs for Samsung's dominance in global and Turkish markets
 samsung_compare_globtr <- tr_samsung_plot + glob_samsung_plot
 print(samsung_compare_globtr)
+```
 
-# ----------------------------------------------------
+![](compared_graphs_final/Rplot_samsung_compared.png)
 
+```{r, fig.show='hide'}
 # Combining the graphs for Apple's dominance in global and Turkish markets
 apple_compare_globtr <- tr_apple_plot + glob_apple_plot
 print(apple_compare_globtr)
+```
 
-# ----------------------------------------------------
+![](compared_graphs_final/Rplot_apple_compared.png)
 
+```{r, fig.show='hide'}
 # Combining the graphs for Xiaomi's dominance in global and Turkish markets
 xiaomi_compare_globtr <- tr_xiaomi_plot + glob_xiaomi_plot
 print(xiaomi_compare_globtr)
 ```
 
+![](compared_graphs_final/Rplot_xiaomi_compared.png)
+
 # **Creating a Comparison Graph for Multiple Brands in the Global Market**
 
 In this section, we use ggplot to create a line graph that compares the performance of multiple brands (Samsung, Apple, Xiaomi, Huawei, Oppo) in the global market. The similar structure was used for the other two graphs, which involve 10 brands and 15 brands, respectively.
 
-```{r}
+```{r, fig.show='hide'}
 # ggplot ile grafik oluşturma
 compare_glob_five <- ggplot() +
   geom_line(data = data_samsung, aes(x = Date, y = Rate, color = "Samsung"), size = 2) +  # Drawing a line for Samsung
@@ -189,11 +298,13 @@ compare_glob_five <- ggplot() +
 print(compare_glob_five)
 ```
 
+![](compared_graphs_final/compare_glob_five.png)
+
 # \*\* Creating a Comparison Graph for Multiple Brands in the Turkey Market\*\*
 
 In this section, we use ggplot to create a line graph that compares the performance of multiple brands (Samsung, Apple, Xiaomi, Huawei, Oppo) in the Turkey market. The similar structure was used for the other two graphs, which involve 10 brands and 15 brands, respectively.
 
-```{r}
+```{r, fig.show='hide'}
 # ggplot ile grafik oluşturma
 compare_tr_five <- ggplot() +
   geom_line(data = data_samsung_tr, aes(x = Date, y = Rate, color = "Samsung"), size = 2) +  # Drawing a line for Samsung
@@ -217,3 +328,5 @@ compare_tr_five <- ggplot() +
         panel.grid.minor = element_line(size = 1))  # Setting the minor grid line thickness
 print(compare_tr_five)
 ```
+
+![](compared_graphs_final/compare_tr_five.png)
