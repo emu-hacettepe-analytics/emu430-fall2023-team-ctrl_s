@@ -159,6 +159,10 @@ In addition to this analysis, we can make the following comments:
 
 <hr>
 
+*In the charts, the market dominance of Samsung, Xiaomi, and Apple is scaled between 0 and 60, while Huawei and Other Brands' market dominance is scaled between 0 and 15, and the remaining brands' market dominance is scaled between 0 and 10.*
+
+<hr>
+
 ## SAMSUNG ![](images/samsung-logo-png-1304.png){width="100" height="35"}
 
 ![](images/Rplot_samsung_compared.png)
