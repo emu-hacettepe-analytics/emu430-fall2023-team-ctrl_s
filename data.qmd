@@ -181,7 +181,9 @@ print(tr_samsung_plot)
 
 ![](images/Rplotsmstr.png)
 
-# Combining Graphs to Compare Samsung's Performance in Global and Turkish Markets
+# Comparisons
+
+## Combining Graphs to Compare Samsung's Performance in Global and Turkish Markets
 
 In this section, we combine two graphs to compare Samsung's performance in both the global and Turkish markets. The same structure has been implemented for all other brands as well.
 
