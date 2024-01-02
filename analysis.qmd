@@ -27,7 +27,7 @@ Below are some analyses based on the data in the graph:
 -   Due to U.S. sanctions, Huawei lost its position in the global market. Huawei is focusing on new markets to overcome the sanctions.
 -   Xiaomi and Oppo are rapidly growing players in the global smartphone market. Xiaomi aims to strengthen its position with a strong price-performance ratio. Oppo, on the other hand, seeks to enhance its position with innovative products and strong marketing activities.
 
-The graph demonstrates that the global smartphone market is a competitive one, featuring strong players such as Apple, Samsung, Huawei, Xiaomi, and Oppo. These players continue to develop new products, explore new markets, and implement new strategies to maintain and strengthen their positions in the market.
+The graph demonstrates that the global smartphone market is a competitive one, featuring strong players such as Apple, Samsung, Huawei, Xiaomi, and Oppo. These players continue to develop new products, explore new markets, and implement new strategies to maintain and strengthen their positions in the market.
 
 <br>
 
@@ -69,7 +69,7 @@ According to the data in the graph, the following trends can be observed in the 
 
 It is expected that these trends will shape the future of the global smartphone market.
 
-<br> <br>
+<br>
 
 ![](compared_graphs_final/compare_tr_five.png)
 
@@ -195,6 +195,8 @@ These factors likely contribute to a less competitive environment for Samsung wi
 
 The graphs reveal a consistent increase in Samsung's market share in both Turkey and the global market. However, it's evident that Samsung's dominance in the Turkish market falls behind its global dominance. This disparity can be attributed to various factors like market size, competition landscape, and price levels.
 
+<hr>
+
 ## APPLE ![](images/png-apple-logo-9708.png){width="60"}
 
 ![](images/Rplot_apple_compared-01.png)
@@ -243,6 +245,8 @@ The additional analyses revealed the following competitive dynamics in the smart
 
 In both the Turkish and global smart phone markets, Apple needs to closely monitor competitive dynamics to sustain its leadership. While facing price-focused competition in Turkey, Apple's global dominance is supported by the innovative products and services provided by its competitors.
 
+<hr>
+
 ## XIAOMI ![](images/xiaomi-33334-01.png){width="60"}
 
 ![](images/Rplot_xiaomi_compared.png)
@@ -268,6 +272,8 @@ If Xiaomi's market share continues to rise in Turkey, it has a high chance of be
 According to the global market share charts, Xiaomi's market share consistently increased from 2017 to 2022. This growth indicates Xiaomi's successful global marketing strategy. Xiaomi attracted global consumers by offering affordable and quality products. Moreover, establishing a widespread service network globally ensured customer satisfaction.
 
 If Xiaomi's global market share continues to grow, it has a high chance of becoming a global market leader in the near future.
+
+<hr>
 
 ## HUAWEI ![](images/Huawei_Standard_logo.svg-min-01.png){width="60"}
 
@@ -311,6 +317,8 @@ Reasons for the decline in Huawei's global market share include:
 
 The graphs reveal how Huawei's dominance has evolved in Turkey and the global markets. While Huawei experienced significant growth in Turkey, its global dominance has weakened.
 
+<hr>
+
 ## OTHER ![](images/3656607-200.png){width="60"}
 
 ![](images/Rplot_other_compared.png)
@@ -339,6 +347,8 @@ To continue increasing the market share of "other brands," the following recomme
 
 Implementing these recommendations will contribute to enhancing the competitiveness of "other brands" in the market and further increasing their market share.
 
+<hr>
+
 ## OPPO ![](images/oppo-logo-40767-01.png){width="100" height="23"}
 
 ![](images/Rplot_oppo_compared.png)
@@ -360,6 +370,8 @@ Another important similarity is that Oppo needs to compete with larger brands su
 An important difference between the two graphs is that Oppo's market share in Turkey is lower than its global market share. This might be attributed to the smaller size of the smartphone market in Turkey compared to the global market.
 
 In conclusion, Oppo demonstrates a strong growth trend in both the Turkish and global markets. While competing with larger brands like Samsung and Apple, Oppo is expected to continue being a significant player in the smartphone market.
+
+<hr>
 
 ## LG ![](images/lg-logo-14410.png){width="100" height="51"}
 
@@ -397,6 +409,8 @@ The decline in LG's dominance in the smartphone markets of Turkey and globally m
 
 **2. Marketing Strategy:** LG's marketing strategy has been insufficient in recent years, negatively impacting awareness and sales of LG smartphones.
 
+<hr>
+
 ## VIVO ![](images/Vivo.png){width="100"}
 
 ![](images/Rplot_vivo_compared.png)
@@ -418,6 +432,8 @@ The global increase in market share can be attributed to Vivo's global expansion
 #### Conclusion
 
 Vivo demonstrates a steady increase in market share both in Turkey and globally. It is anticipated that Vivo will continue this upward trend in the future.
+
+<hr>
 
 ## REALME ![](images/Realme-01.png){width="100" height="29"}
 
@@ -442,6 +458,8 @@ The key difference between Realme's dominance in Turkey and the global market li
 3\. Realme in Turkey successfully expanded its market share by increasing marketing and distribution activities.
 
 On the global stage, Realme faced slower growth due to increased competition and market maturity. However, Realme plans to enhance its global market share by entering new markets and introducing new products and services.
+
+<hr>
 
 ## SONY ![](images/sony-logo-3074.png){width="100" height="17"}
 
@@ -469,6 +487,8 @@ The decline in Sony's dominance in both Turkish and global markets can be attrib
 
 The decrease in Sony's dominance in Turkish and global markets is not indicative of the company's future success. If Sony cannot address the factors contributing to this decline, there is a risk of further loss in market share.
 
+<hr>
+
 ## NOKIA ![](images/Nokia-Logo-PNG3-01.png){width="100" height="28"}
 
 ![](images/Rplot_nokia_compared-01.png)
@@ -493,6 +513,8 @@ When comparing the decline in dominance in Turkish and global markets, it is evi
 
 The decline in Nokia's market share signals the company's loss of competitiveness in the global mobile market. To overcome this decline, Nokia should focus on developing new strategies and restructuring its marketing activities. Adopting innovative approaches and adapting to changing market dynamics will be crucial for Nokia's resurgence in both Turkish and global markets.
 
+<hr>
+
 ## ONEPLUS ![](images/OnePlus-Logo.wine.png){width="100" height="23"}
 
 ![](images/Rplot_oneplus_compared-01.png)
@@ -512,6 +534,8 @@ The dominance of OnePlus globally is growing at a faster rate compared to its pr
 Several factors contribute to OnePlus's global growth. Firstly, OnePlus is known for offering affordable yet high-quality smartphones. Secondly, OnePlus has a robust marketing campaign. Thirdly, OnePlus benefits from the increasing demand for smartphones in both the Turkish and global markets.
 
 The expansion of OnePlus is positive news for both the Turkish and global smartphone markets. OnePlus's growth is expected to enhance competition and provide consumers with more choices. The company's ability to offer competitive products at attractive prices and its effective marketing strategies contribute to its success on a global scale.
+
+<hr>
 
 ## HTC ![](images/HTC%20One.png){width="100" height="30"}
 
@@ -536,6 +560,8 @@ The decline in HTC's market dominance in Turkey and globally raises significant 
 Increasing Research and Development (R&D) investments could allow HTC to develop innovative products that stand out in the market. Additionally, expanding into new markets may help HTC increase its competitiveness against rival firms.
 
 By taking these measures, HTC can regain its market dominance in both the Turkish and global markets. Adopting a proactive approach to innovation and market expansion will be crucial for HTC's future success.
+
+<hr>
 
 ## TECNO ![](images/Tecno%20Logo%20Vector.png){width="100" height="19"}
 
@@ -574,6 +600,8 @@ To enhance Tecno's dominance in both the Turkish and global markets, the followi
    - Allocate resources to research and development to stay abreast of new technologies and industry trends.
 
 By implementing these recommendations, Tecno can solidify its position in both the Turkish and global smartphone markets and continue its upward trajectory in market dominance.
+
+<hr>
 
 ## BONUS : UNKNOWN ![](images/unknown-18-128.png){width="60"}
 

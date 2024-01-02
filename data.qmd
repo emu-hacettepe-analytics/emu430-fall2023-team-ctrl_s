@@ -27,6 +27,10 @@ library(openxlsx)      # For reading and writing Excel files
 library(lubridate)     # For date and time operations
 ```
 
+<hr>
+
+<hr>
+
 # Global Market
 
 ## **Data Loading and Processing**
@@ -47,6 +51,8 @@ head(new_data_sep_year)
 new_data_sep_year$Date <- ym(new_data_sep_year$Date)
 head(new_data_sep_year)
 ```
+
+<hr>
 
 ## Data Separation by Brand
 
@@ -77,6 +83,8 @@ data_tecno <- new_data_sep_year %>% filter(Brand == "Tecno")
 
 ```
 
+<hr>
+
 ## Global Market Dominance Graphs
 
 ### *Ex: Samsung's Global Dominance Graph*
@@ -104,6 +112,10 @@ print(glob_samsung_plot)
 
 ![](Solo%20Graphs%20(%20Global%20)/Rplot-global-samsung.png)
 
+<hr>
+
+<hr>
+
 # Turkish Market
 
 In this section, we loaded the necessary datasets for the Turkish market and processed the date information. The function of each code block is specified below:
@@ -122,6 +134,8 @@ new_data_sep_year_tr$Date <- ym(new_data_sep_year_tr$Date)
 head(new_data_sep_year_tr$Date)
 
 ```
+
+<hr>
 
 ## Data Separation by Brand
 
@@ -155,6 +169,8 @@ data_other_tr <- new_data_sep_year_tr %>% filter(Brand == "Other")
 data_tecno_tr <- new_data_sep_year_tr %>% filter(Brand == "Tecno")
 ```
 
+<hr>
+
 ## Turkey's Market Dominance Graphs
 
 ### *Ex: Samsung's Turkey Dominance Graph*
@@ -180,6 +196,10 @@ print(tr_samsung_plot)
 ```
 
 ![](images/Rplotsmstr.png)
+
+<hr>
+
+<hr>
 
 # Comparisons
 
@@ -210,6 +230,10 @@ print(samsung_compare_globtr)
 ```
 
 ![](compared_graphs_final/Rplot_xiaomi_compared.png)
+
+<hr>
+
+<hr>
 
 # **Creating a Comparison Graph for Multiple Brands in the Global Market**
 
@@ -245,6 +269,10 @@ print(compare_glob_five)
 ```
 
 ![](compared_graphs_final/compare_glob_five.png)
+
+<hr>
+
+<hr>
 
 # Creating a Comparison Graph for Multiple Brands in the Turkey Market
 

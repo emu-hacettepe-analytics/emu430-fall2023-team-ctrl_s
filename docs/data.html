@@ -210,6 +210,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(openxlsx)      <span class="co"># For reading and writing Excel files</span></span>
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lubridate)     <span class="co"># For date and time operations</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<hr>
+<hr>
 </section>
 <section id="global-market" class="level1">
 <h1>Global Market</h1>
@@ -260,6 +262,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 6 2017-09-01 2017  09    Samsung  33.7</code></pre>
 </div>
 </div>
+<hr>
 </section>
 <section id="data-separation-by-brand" class="level2">
 <h2 class="anchored" data-anchor-id="data-separation-by-brand">Data Separation by Brand</h2>
@@ -297,6 +300,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>data_other <span class="ot">&lt;-</span> new_data_sep_year <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Brand <span class="sc">==</span> <span class="st">"Other"</span>)</span>
 <span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>data_tecno <span class="ot">&lt;-</span> new_data_sep_year <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Brand <span class="sc">==</span> <span class="st">"Tecno"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<hr>
 </section>
 <section id="global-market-dominance-graphs" class="level2">
 <h2 class="anchored" data-anchor-id="global-market-dominance-graphs">Global Market Dominance Graphs</h2>
@@ -321,6 +325,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb11-15"><a href="#cb11-15" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(glob_samsung_plot)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><img src="Solo Graphs ( Global )/Rplot-global-samsung.png" class="img-fluid"></p>
+<hr>
+<hr>
 </section>
 </section>
 </section>
@@ -364,6 +370,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 [6] "2017-09-01"</code></pre>
 </div>
 </div>
+<hr>
 <section id="data-separation-by-brand-1" class="level2">
 <h2 class="anchored" data-anchor-id="data-separation-by-brand-1">Data Separation by Brand</h2>
 <p>In this section, we created separate data frames for each brand in our ‘new_data_sep_year_tr’ data frame. This allows us to perform distinct analyses for each brand in the Turkish market. The code provided below is specific to Samsung, Apple, and Xiaomi. The same structure has been implemented for all other brands as well.</p>
@@ -404,6 +411,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb20-18"><a href="#cb20-18" aria-hidden="true" tabindex="-1"></a>data_other_tr <span class="ot">&lt;-</span> new_data_sep_year_tr <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Brand <span class="sc">==</span> <span class="st">"Other"</span>)</span>
 <span id="cb20-19"><a href="#cb20-19" aria-hidden="true" tabindex="-1"></a>data_tecno_tr <span class="ot">&lt;-</span> new_data_sep_year_tr <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Brand <span class="sc">==</span> <span class="st">"Tecno"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<hr>
 </section>
 <section id="turkeys-market-dominance-graphs" class="level2">
 <h2 class="anchored" data-anchor-id="turkeys-market-dominance-graphs">Turkey’s Market Dominance Graphs</h2>
@@ -428,6 +436,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb21-15"><a href="#cb21-15" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(tr_samsung_plot)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><img src="images/Rplotsmstr.png" class="img-fluid"></p>
+<hr>
+<hr>
 </section>
 </section>
 </section>
@@ -454,6 +464,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="co"># print(xiaomi_compare_globtr)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><img src="compared_graphs_final/Rplot_xiaomi_compared.png" class="img-fluid"></p>
+<hr>
+<hr>
 </section>
 </section>
 <section id="creating-a-comparison-graph-for-multiple-brands-in-the-global-market" class="level1">
@@ -488,6 +500,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb25-26"><a href="#cb25-26" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(compare_glob_five)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><img src="compared_graphs_final/compare_glob_five.png" class="img-fluid"></p>
+<hr>
+<hr>
 </section>
 <section id="creating-a-comparison-graph-for-multiple-brands-in-the-turkey-market" class="level1">
 <h1>Creating a Comparison Graph for Multiple Brands in the Turkey Market</h1>
