@@ -1,0 +1,49 @@
+---
+title: "Ctrl_S"
+sidebar: false
+format: 
+  pdf:
+    colorlinks: TRUE
+    papersize: a4
+    fontsize: 11pt
+    margin-left: 2cm
+    margin-right: 2cm
+    margin-top: 2cm
+    margin-bottom: 2cm
+---
+
+```{r}
+library(readr)         # For data reading operations
+library(readxl)        # For reading Excel files
+library(utf8)          # For UTF-8 text processing
+library(ggplot2)       # For data visualization
+library(tidyverse)     # For data manipulation and visualization
+library(hrbrthemes)    # Additional themes and theme components for ggplot2
+library(ggthemes)      # Additional themes and color palettes for ggplot2
+library(patchwork)     # For combining ggplot2 graphics
+library(tidyr)         # For data cleaning
+library(openxlsx)      # For reading and writing Excel files
+library(lubridate)     # For date and time operations
+```
+
+asdrfsdfgdsfgsdfgsdfg
+
+sadfdg
+
+sdfg
+
+dsfg
+
+dfs
+
+g
+
+sdfg
+
+dsfg
+
+sdf
+
+gdsf
+
+g

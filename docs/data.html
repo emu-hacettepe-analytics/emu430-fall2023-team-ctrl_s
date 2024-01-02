@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Ctrl_S Project Page - Data</title>
+<title>Ctrl_S Project Page - data</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -105,7 +139,36 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
-    
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#libraries" id="toc-libraries" class="nav-link active" data-scroll-target="#libraries"><strong>Libraries</strong></a></li>
+  <li><a href="#global-market" id="toc-global-market" class="nav-link" data-scroll-target="#global-market">Global Market</a>
+  <ul class="collapse">
+  <li><a href="#data-loading-and-processing" id="toc-data-loading-and-processing" class="nav-link" data-scroll-target="#data-loading-and-processing"><strong>Data Loading and Processing</strong></a></li>
+  <li><a href="#data-separation-by-brand" id="toc-data-separation-by-brand" class="nav-link" data-scroll-target="#data-separation-by-brand">Data Separation by Brand</a></li>
+  <li><a href="#global-market-dominance-graphs" id="toc-global-market-dominance-graphs" class="nav-link" data-scroll-target="#global-market-dominance-graphs">Global Market Dominance Graphs</a>
+  <ul class="collapse">
+  <li><a href="#ex-samsungs-global-dominance-graph" id="toc-ex-samsungs-global-dominance-graph" class="nav-link" data-scroll-target="#ex-samsungs-global-dominance-graph"><em>Ex: Samsung’s Global Dominance Graph</em></a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#turkish-market" id="toc-turkish-market" class="nav-link" data-scroll-target="#turkish-market">Turkish Market</a>
+  <ul class="collapse">
+  <li><a href="#data-separation-by-brand-1" id="toc-data-separation-by-brand-1" class="nav-link" data-scroll-target="#data-separation-by-brand-1">Data Separation by Brand</a></li>
+  <li><a href="#turkeys-market-dominance-graphs" id="toc-turkeys-market-dominance-graphs" class="nav-link" data-scroll-target="#turkeys-market-dominance-graphs">Turkey’s Market Dominance Graphs</a>
+  <ul class="collapse">
+  <li><a href="#ex-samsungs-turkey-dominance-graph" id="toc-ex-samsungs-turkey-dominance-graph" class="nav-link" data-scroll-target="#ex-samsungs-turkey-dominance-graph"><em>Ex: Samsung’s Turkey Dominance Graph</em></a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#comparisons" id="toc-comparisons" class="nav-link" data-scroll-target="#comparisons">Comparisons</a>
+  <ul class="collapse">
+  <li><a href="#combining-graphs-to-compare-samsungs-performance-in-global-and-turkish-markets" id="toc-combining-graphs-to-compare-samsungs-performance-in-global-and-turkish-markets" class="nav-link" data-scroll-target="#combining-graphs-to-compare-samsungs-performance-in-global-and-turkish-markets">Combining Graphs to Compare Samsung’s Performance in Global and Turkish Markets</a></li>
+  </ul></li>
+  <li><a href="#creating-a-comparison-graph-for-multiple-brands-in-the-global-market" id="toc-creating-a-comparison-graph-for-multiple-brands-in-the-global-market" class="nav-link" data-scroll-target="#creating-a-comparison-graph-for-multiple-brands-in-the-global-market"><strong>Creating a Comparison Graph for Multiple Brands in the Global Market</strong></a></li>
+  <li><a href="#creating-a-comparison-graph-for-multiple-brands-in-the-turkey-market" id="toc-creating-a-comparison-graph-for-multiple-brands-in-the-turkey-market" class="nav-link" data-scroll-target="#creating-a-comparison-graph-for-multiple-brands-in-the-turkey-market">Creating a Comparison Graph for Multiple Brands in the Turkey Market</a></li>
+  </ul>
+</nav>
 </nav>
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
@@ -116,7 +179,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Data</h1>
+<h1 class="title">data</h1>
 </div>
 
 
@@ -131,9 +194,349 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Data source: xxx</p>
+<section id="libraries" class="level1">
+<h1><strong>Libraries</strong></h1>
+<p>In this section, we have loaded the libraries required for our project. The function of each library is specified below:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)         <span class="co"># For data reading operations</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)        <span class="co"># For reading Excel files</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(utf8)          <span class="co"># For UTF-8 text processing</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)       <span class="co"># For data visualization</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)     <span class="co"># For data manipulation and visualization</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(hrbrthemes)    <span class="co"># Additional themes and theme components for ggplot2</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggthemes)      <span class="co"># Additional themes and color palettes for ggplot2</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(patchwork)     <span class="co"># For combining ggplot2 graphics</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyr)         <span class="co"># For data cleaning</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(openxlsx)      <span class="co"># For reading and writing Excel files</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lubridate)     <span class="co"># For date and time operations</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<hr>
+<hr>
+</section>
+<section id="global-market" class="level1">
+<h1>Global Market</h1>
+<section id="data-loading-and-processing" class="level2">
+<h2 class="anchored" data-anchor-id="data-loading-and-processing"><strong>Data Loading and Processing</strong></h2>
+<p>In this section, we loaded the datasets required for our project and processed the date information. The function of each code block is specified below:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># We read the 'new_data.xlsx' file to create the 'new_data' data frame.</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>new_data <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"new_data.xlsx"</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(new_data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 3
+  Date    Brand    Rate
+  &lt;chr&gt;   &lt;chr&gt;   &lt;dbl&gt;
+1 2017-04 Samsung  33.0
+2 2017-05 Samsung  33.2
+3 2017-06 Samsung  33.1
+4 2017-07 Samsung  33.4
+5 2017-08 Samsung  33.1
+6 2017-09 Samsung  33.7</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># We separated the 'Date' column into 'Year' and 'Month' columns.</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>new_data_sep_year <span class="ot">&lt;-</span> new_data <span class="sc">%&gt;%</span> <span class="fu">separate</span>(Date, <span class="fu">c</span>(<span class="st">"Year"</span>,<span class="st">"Month"</span>), <span class="st">"-"</span>, <span class="at">remove =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(new_data_sep_year)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 5
+  Date    Year  Month Brand    Rate
+  &lt;chr&gt;   &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;   &lt;dbl&gt;
+1 2017-04 2017  04    Samsung  33.0
+2 2017-05 2017  05    Samsung  33.2
+3 2017-06 2017  06    Samsung  33.1
+4 2017-07 2017  07    Samsung  33.4
+5 2017-08 2017  08    Samsung  33.1
+6 2017-09 2017  09    Samsung  33.7</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># We converted the dates in the 'Date' column to the year-month format.</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>new_data_sep_year<span class="sc">$</span>Date <span class="ot">&lt;-</span> <span class="fu">ym</span>(new_data_sep_year<span class="sc">$</span>Date)</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(new_data_sep_year)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 5
+  Date       Year  Month Brand    Rate
+  &lt;date&gt;     &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;   &lt;dbl&gt;
+1 2017-04-01 2017  04    Samsung  33.0
+2 2017-05-01 2017  05    Samsung  33.2
+3 2017-06-01 2017  06    Samsung  33.1
+4 2017-07-01 2017  07    Samsung  33.4
+5 2017-08-01 2017  08    Samsung  33.1
+6 2017-09-01 2017  09    Samsung  33.7</code></pre>
+</div>
+</div>
+<hr>
+</section>
+<section id="data-separation-by-brand" class="level2">
+<h2 class="anchored" data-anchor-id="data-separation-by-brand">Data Separation by Brand</h2>
+<p>In this section, we created separate data frames for each brand in our ‘new_data_sep_year’ data frame. This allows us to perform individual analyses for each brand. The code provided below is specific to Samsung, Apple, and Xiaomi. The same structure has been implemented for all other brands as well.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Creating a data frame for the Samsung brand</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>data_samsung <span class="ot">&lt;-</span> new_data_sep_year <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Brand <span class="sc">==</span> <span class="st">"Samsung"</span>) </span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(data_samsung)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 5
+  Date       Year  Month Brand    Rate
+  &lt;date&gt;     &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;   &lt;dbl&gt;
+1 2017-04-01 2017  04    Samsung  33.0
+2 2017-05-01 2017  05    Samsung  33.2
+3 2017-06-01 2017  06    Samsung  33.1
+4 2017-07-01 2017  07    Samsung  33.4
+5 2017-08-01 2017  08    Samsung  33.1
+6 2017-09-01 2017  09    Samsung  33.7</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Creating data frames for the other brads</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>data_xiaomi <span class="ot">&lt;-</span> new_data_sep_year <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Brand <span class="sc">==</span> <span class="st">"Xiaomi"</span>)</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>data_apple <span class="ot">&lt;-</span> new_data_sep_year <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Brand <span class="sc">==</span> <span class="st">"Apple"</span>)</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>data_huawei <span class="ot">&lt;-</span> new_data_sep_year <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Brand <span class="sc">==</span> <span class="st">"Huawei"</span>)</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>data_oppo <span class="ot">&lt;-</span> new_data_sep_year <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Brand <span class="sc">==</span> <span class="st">"Oppo"</span>)</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>data_unknown <span class="ot">&lt;-</span> new_data_sep_year <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Brand <span class="sc">==</span> <span class="st">"Unknown"</span>)</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>data_lg <span class="ot">&lt;-</span> new_data_sep_year <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Brand <span class="sc">==</span> <span class="st">"LG"</span>)</span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>data_vivo <span class="ot">&lt;-</span> new_data_sep_year <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Brand <span class="sc">==</span> <span class="st">"Vivo"</span>)</span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>data_nokia <span class="ot">&lt;-</span> new_data_sep_year <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Brand <span class="sc">==</span> <span class="st">"Nokia"</span>)</span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>data_realme <span class="ot">&lt;-</span> new_data_sep_year <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Brand <span class="sc">==</span> <span class="st">"Realme"</span>)</span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>data_sony <span class="ot">&lt;-</span> new_data_sep_year <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Brand <span class="sc">==</span> <span class="st">"Sony"</span>)</span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>data_oneplus <span class="ot">&lt;-</span> new_data_sep_year <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Brand <span class="sc">==</span> <span class="st">"OnePlus"</span>)</span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>data_htc <span class="ot">&lt;-</span> new_data_sep_year <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Brand <span class="sc">==</span> <span class="st">"HTC"</span>)</span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>data_other <span class="ot">&lt;-</span> new_data_sep_year <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Brand <span class="sc">==</span> <span class="st">"Other"</span>)</span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>data_tecno <span class="ot">&lt;-</span> new_data_sep_year <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Brand <span class="sc">==</span> <span class="st">"Tecno"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<hr>
+</section>
+<section id="global-market-dominance-graphs" class="level2">
+<h2 class="anchored" data-anchor-id="global-market-dominance-graphs">Global Market Dominance Graphs</h2>
+<section id="ex-samsungs-global-dominance-graph" class="level3">
+<h3 class="anchored" data-anchor-id="ex-samsungs-global-dominance-graph"><em>Ex: Samsung’s Global Dominance Graph</em></h3>
+<p>In this section, we created a graph using the dates and rates from our ‘data_samsung’ data frame. This graph illustrates Samsung’s global dominance. The code structure used in this example has been repeated for all other brands as well.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>glob_samsung_plot <span class="ot">&lt;-</span> data_samsung <span class="sc">%&gt;%</span> <span class="fu">ggplot</span>(<span class="fu">aes</span>(Date, Rate)) <span class="sc">+</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">color =</span> <span class="st">"black"</span>, <span class="at">size =</span> <span class="dv">3</span>) <span class="sc">+</span>                             <span class="co"># Plotting points in black color with size 3</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_ipsum</span>() <span class="sc">+</span>                                                     <span class="co"># Using the 'ipsum' theme</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">60</span>)) <span class="sc">+</span>                             <span class="co"># Setting limits for the y-axis as 0 to 60</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="st">"Samsung's Global Dominance"</span>) <span class="sc">+</span>                             <span class="co"># Setting the title of the graph</span></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_date</span>(<span class="at">date_labels =</span> <span class="st">"20%y-%m"</span>, <span class="at">date_breaks =</span> <span class="st">"12 months"</span>) <span class="sc">+</span>  <span class="co"># Displaying dates on the x-axis in year-month format</span></span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">26</span>)) <span class="sc">+</span>                      <span class="co"># Setting the size of text on the x-axis</span></span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.y =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">29</span>)) <span class="sc">+</span>                      <span class="co"># Setting the size of text on the y-axis</span></span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">color =</span> <span class="st">"#0c4da2"</span>, <span class="at">size =</span> <span class="dv">48</span>)) <span class="sc">+</span>    <span class="co"># Setting the color and size of the title text</span></span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.title.x =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">30</span>)) <span class="sc">+</span>                     <span class="co"># Setting the size of the x-axis title</span></span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.title.y =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">30</span>)) <span class="sc">+</span>                     <span class="co"># Setting the size of the y-axis title</span></span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">panel.grid.major =</span> <span class="fu">element_line</span>(<span class="at">size =</span> <span class="fl">1.25</span>),                 <span class="co"># Setting the thickness of major grid lines</span></span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a>        <span class="at">panel.grid.minor =</span> <span class="fu">element_line</span>(<span class="at">size =</span> <span class="fl">1.00</span>))                 <span class="co"># Setting the thickness of minor grid lines</span></span>
+<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-15"><a href="#cb11-15" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(glob_samsung_plot)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><img src="Solo Graphs ( Global )/Rplot-global-samsung.png" class="img-fluid"></p>
+<hr>
+<hr>
+</section>
+</section>
+</section>
+<section id="turkish-market" class="level1">
+<h1>Turkish Market</h1>
+<p>In this section, we loaded the necessary datasets for the Turkish market and processed the date information. The function of each code block is specified below:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Reading the 'new_data_tr.xlsx' file to create the 'new_data_tr' data frame.</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>new_data_tr <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"new_data_tr.xlsx"</span>)</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(new_data_tr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 3
+  Date    Brand    Rate
+  &lt;chr&gt;   &lt;chr&gt;   &lt;dbl&gt;
+1 2017-04 Samsung  49.4
+2 2017-05 Samsung  49.9
+3 2017-06 Samsung  49.8
+4 2017-07 Samsung  50.5
+5 2017-08 Samsung  50.2
+6 2017-09 Samsung  51.3</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Separating the 'Date' column into 'Year' and 'Month' columns.</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>new_data_sep_year_tr <span class="ot">&lt;-</span> new_data_tr <span class="sc">%&gt;%</span> <span class="fu">separate</span>(Date, <span class="fu">c</span>(<span class="st">"Year"</span>,<span class="st">"Month"</span>), <span class="st">"-"</span>, <span class="at">remove =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(new_data_sep_year_tr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 5
+  Date    Year  Month Brand    Rate
+  &lt;chr&gt;   &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;   &lt;dbl&gt;
+1 2017-04 2017  04    Samsung  49.4
+2 2017-05 2017  05    Samsung  49.9
+3 2017-06 2017  06    Samsung  49.8
+4 2017-07 2017  07    Samsung  50.5
+5 2017-08 2017  08    Samsung  50.2
+6 2017-09 2017  09    Samsung  51.3</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Converting the dates in the 'Date' column to the year-month format.</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>new_data_sep_year_tr<span class="sc">$</span>Date <span class="ot">&lt;-</span> <span class="fu">ym</span>(new_data_sep_year_tr<span class="sc">$</span>Date)</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(new_data_sep_year_tr<span class="sc">$</span>Date)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "2017-04-01" "2017-05-01" "2017-06-01" "2017-07-01" "2017-08-01"
+[6] "2017-09-01"</code></pre>
+</div>
+</div>
+<hr>
+<section id="data-separation-by-brand-1" class="level2">
+<h2 class="anchored" data-anchor-id="data-separation-by-brand-1">Data Separation by Brand</h2>
+<p>In this section, we created separate data frames for each brand in our ‘new_data_sep_year_tr’ data frame. This allows us to perform distinct analyses for each brand in the Turkish market. The code provided below is specific to Samsung, Apple, and Xiaomi. The same structure has been implemented for all other brands as well.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Creating a data frame for the Samsung brand in the Turkish market</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>data_samsung_tr <span class="ot">&lt;-</span> new_data_sep_year_tr <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Brand <span class="sc">==</span> <span class="st">"Samsung"</span>)</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(data_samsung_tr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 5
+  Date       Year  Month Brand    Rate
+  &lt;date&gt;     &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;   &lt;dbl&gt;
+1 2017-04-01 2017  04    Samsung  49.4
+2 2017-05-01 2017  05    Samsung  49.9
+3 2017-06-01 2017  06    Samsung  49.8
+4 2017-07-01 2017  07    Samsung  50.5
+5 2017-08-01 2017  08    Samsung  50.2
+6 2017-09-01 2017  09    Samsung  51.3</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Creating data frames for other brands</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>data_apple_tr <span class="ot">&lt;-</span> new_data_sep_year_tr <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Brand <span class="sc">==</span> <span class="st">"Apple"</span>)</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>data_xiaomi_tr <span class="ot">&lt;-</span> new_data_sep_year_tr <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Brand <span class="sc">==</span> <span class="st">"Xiaomi"</span>)</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>data_huawei_tr <span class="ot">&lt;-</span> new_data_sep_year_tr <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Brand <span class="sc">==</span> <span class="st">"Huawei"</span>)</span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>data_oppo_tr <span class="ot">&lt;-</span> new_data_sep_year_tr <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Brand <span class="sc">==</span> <span class="st">"Oppo"</span>)</span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>data_unknown_tr <span class="ot">&lt;-</span> new_data_sep_year_tr <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Brand <span class="sc">==</span> <span class="st">"Unknown"</span>)</span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a>data_motorola_tr <span class="ot">&lt;-</span> new_data_sep_year_tr <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Brand <span class="sc">==</span> <span class="st">"Motorola"</span>)</span>
+<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a>data_lg_tr <span class="ot">&lt;-</span> new_data_sep_year_tr <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Brand <span class="sc">==</span> <span class="st">"LG"</span>)</span>
+<span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a>data_lenovo_tr <span class="ot">&lt;-</span> new_data_sep_year_tr <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Brand <span class="sc">==</span> <span class="st">"Lenovo"</span>)</span>
+<span id="cb20-10"><a href="#cb20-10" aria-hidden="true" tabindex="-1"></a>data_vivo_tr <span class="ot">&lt;-</span> new_data_sep_year_tr <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Brand <span class="sc">==</span> <span class="st">"Vivo"</span>)</span>
+<span id="cb20-11"><a href="#cb20-11" aria-hidden="true" tabindex="-1"></a>data_nokia_tr <span class="ot">&lt;-</span> new_data_sep_year_tr <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Brand <span class="sc">==</span> <span class="st">"Nokia"</span>)</span>
+<span id="cb20-12"><a href="#cb20-12" aria-hidden="true" tabindex="-1"></a>data_realme_tr <span class="ot">&lt;-</span> new_data_sep_year_tr <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Brand <span class="sc">==</span> <span class="st">"Realme"</span>)</span>
+<span id="cb20-13"><a href="#cb20-13" aria-hidden="true" tabindex="-1"></a>data_sony_tr <span class="ot">&lt;-</span> new_data_sep_year_tr <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Brand <span class="sc">==</span> <span class="st">"Sony"</span>)</span>
+<span id="cb20-14"><a href="#cb20-14" aria-hidden="true" tabindex="-1"></a>data_asus_tr <span class="ot">&lt;-</span> new_data_sep_year_tr <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Brand <span class="sc">==</span> <span class="st">"Asus"</span>)</span>
+<span id="cb20-15"><a href="#cb20-15" aria-hidden="true" tabindex="-1"></a>data_oneplus_tr <span class="ot">&lt;-</span> new_data_sep_year_tr <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Brand <span class="sc">==</span> <span class="st">"OnePlus"</span>)</span>
+<span id="cb20-16"><a href="#cb20-16" aria-hidden="true" tabindex="-1"></a>data_htc_tr <span class="ot">&lt;-</span> new_data_sep_year_tr <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Brand <span class="sc">==</span> <span class="st">"HTC"</span>)</span>
+<span id="cb20-17"><a href="#cb20-17" aria-hidden="true" tabindex="-1"></a>data_google_tr <span class="ot">&lt;-</span> new_data_sep_year_tr <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Brand <span class="sc">==</span> <span class="st">"Google"</span>)</span>
+<span id="cb20-18"><a href="#cb20-18" aria-hidden="true" tabindex="-1"></a>data_other_tr <span class="ot">&lt;-</span> new_data_sep_year_tr <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Brand <span class="sc">==</span> <span class="st">"Other"</span>)</span>
+<span id="cb20-19"><a href="#cb20-19" aria-hidden="true" tabindex="-1"></a>data_tecno_tr <span class="ot">&lt;-</span> new_data_sep_year_tr <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Brand <span class="sc">==</span> <span class="st">"Tecno"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<hr>
+</section>
+<section id="turkeys-market-dominance-graphs" class="level2">
+<h2 class="anchored" data-anchor-id="turkeys-market-dominance-graphs">Turkey’s Market Dominance Graphs</h2>
+<section id="ex-samsungs-turkey-dominance-graph" class="level3">
+<h3 class="anchored" data-anchor-id="ex-samsungs-turkey-dominance-graph"><em>Ex: Samsung’s Turkey Dominance Graph</em></h3>
+<p>In this section, we created a graph using the ‘data_samsung_tr’ data frame, showcasing the date and rates. This graph illustrates Samsung’s dominance in the Turkish market. The code structure used in this example has been repeated for all other brands as well.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>tr_samsung_plot <span class="ot">&lt;-</span> data_samsung_tr <span class="sc">%&gt;%</span> <span class="fu">ggplot</span>(<span class="fu">aes</span>(Date, Rate)) <span class="sc">+</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">color =</span> <span class="st">"black"</span>, <span class="at">size =</span> <span class="dv">3</span>) <span class="sc">+</span>                             <span class="co"># Plotting points in black color with a size of 3</span></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_ipsum</span>() <span class="sc">+</span>                                                     <span class="co"># Using the 'ipsum' theme</span></span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">60</span>)) <span class="sc">+</span>                             <span class="co"># Setting the limits of the y-axis to 0 and 60</span></span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="st">"Samsung's Turkey Dominance"</span>) <span class="sc">+</span>                             <span class="co"># Setting the title of the graph</span></span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_date</span>(<span class="at">date_labels =</span> <span class="st">"20%y-%m"</span>, <span class="at">date_breaks =</span> <span class="st">"12 months"</span>) <span class="sc">+</span>  <span class="co"># Displaying dates on the x-axis in year-month format</span></span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">26</span>)) <span class="sc">+</span>                      <span class="co"># Setting the size of text on the x-axis</span></span>
+<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.y =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">29</span>)) <span class="sc">+</span>                      <span class="co"># Setting the size of text on the y-axis</span></span>
+<span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.title.x =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">30</span>)) <span class="sc">+</span>                     <span class="co"># Setting the size of the x-axis title</span></span>
+<span id="cb21-10"><a href="#cb21-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.title.y =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">30</span>)) <span class="sc">+</span>                     <span class="co"># Setting the size of the y-axis title</span></span>
+<span id="cb21-11"><a href="#cb21-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">color =</span> <span class="st">"#0c4da2"</span>, <span class="at">size =</span> <span class="dv">48</span>)) <span class="sc">+</span>    <span class="co"># Setting the color and size of the title text</span></span>
+<span id="cb21-12"><a href="#cb21-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">panel.grid.major =</span> <span class="fu">element_line</span>(<span class="at">size =</span> <span class="fl">1.25</span>),                 <span class="co"># Setting the thickness of major grid lines</span></span>
+<span id="cb21-13"><a href="#cb21-13" aria-hidden="true" tabindex="-1"></a>        <span class="at">panel.grid.minor =</span> <span class="fu">element_line</span>(<span class="at">size =</span> <span class="fl">1.00</span>))                 <span class="co"># Setting the thickness of minor grid lines</span></span>
+<span id="cb21-14"><a href="#cb21-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-15"><a href="#cb21-15" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(tr_samsung_plot)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><img src="images/Rplotsmstr.png" class="img-fluid"></p>
+<hr>
+<hr>
+</section>
+</section>
+</section>
+<section id="comparisons" class="level1">
+<h1>Comparisons</h1>
+<section id="combining-graphs-to-compare-samsungs-performance-in-global-and-turkish-markets" class="level2">
+<h2 class="anchored" data-anchor-id="combining-graphs-to-compare-samsungs-performance-in-global-and-turkish-markets">Combining Graphs to Compare Samsung’s Performance in Global and Turkish Markets</h2>
+<p>In this section, we combine two graphs to compare Samsung’s performance in both the global and Turkish markets. The same structure has been implemented for all other brands as well.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Combining the graphs for Samsung's dominance in global and Turkish markets</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>samsung_compare_globtr <span class="ot">&lt;-</span> tr_samsung_plot <span class="sc">+</span> glob_samsung_plot</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(samsung_compare_globtr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><img src="compared_graphs_final/Rplot_samsung_compared.png" class="img-fluid"></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Combining the graphs for Apple's dominance in global and Turkish markets</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="co"># apple_compare_globtr &lt;- tr_apple_plot + glob_apple_plot</span></span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="co"># print(apple_compare_globtr)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><img src="compared_graphs_final/Rplot_apple_compared.png" class="img-fluid"></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Combining the graphs for Xiaomi's dominance in global and Turkish markets</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="co"># xiaomi_compare_globtr &lt;- tr_xiaomi_plot + glob_xiaomi_plot</span></span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="co"># print(xiaomi_compare_globtr)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><img src="compared_graphs_final/Rplot_xiaomi_compared.png" class="img-fluid"></p>
+<hr>
+<hr>
+</section>
+</section>
+<section id="creating-a-comparison-graph-for-multiple-brands-in-the-global-market" class="level1">
+<h1><strong>Creating a Comparison Graph for Multiple Brands in the Global Market</strong></h1>
+<p>In this section, we use ggplot to create a line graph that compares the performance of multiple brands (Samsung, Apple, Xiaomi, Huawei, Oppo) in the global market. The similar structure was used for the other two graphs, which involve 10 brands and 15 brands, respectively.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># ggplot ile grafik oluşturma</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>compare_glob_five <span class="ot">&lt;-</span> <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">data =</span> data_samsung, <span class="fu">aes</span>(<span class="at">x =</span> Date, <span class="at">y =</span> Rate, <span class="at">color =</span> <span class="st">"Samsung"</span>), <span class="at">size =</span> <span class="dv">2</span>) <span class="sc">+</span>  <span class="co"># Drawing a line for Samsung</span></span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">data =</span> data_apple, <span class="fu">aes</span>(<span class="at">x =</span> Date, <span class="at">y =</span> Rate, <span class="at">color =</span> <span class="st">"Apple"</span>), <span class="at">size =</span> <span class="dv">2</span>) <span class="sc">+</span>  <span class="co"># Drawing a line for Apple</span></span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">data =</span> data_xiaomi, <span class="fu">aes</span>(<span class="at">x =</span> Date, <span class="at">y =</span> Rate, <span class="at">color =</span> <span class="st">"Xiaomi"</span>), <span class="at">size =</span> <span class="dv">2</span>) <span class="sc">+</span>  <span class="co"># Drawing a line for Xiaomi</span></span>
+<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">data =</span> data_huawei, <span class="fu">aes</span>(<span class="at">x =</span> Date, <span class="at">y =</span> Rate, <span class="at">color =</span> <span class="st">"Huawei"</span>), <span class="at">size =</span> <span class="dv">2</span>) <span class="sc">+</span>  <span class="co"># Drawing a line for Huawei</span></span>
+<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">data =</span> data_oppo, <span class="fu">aes</span>(<span class="at">x =</span> Date, <span class="at">y =</span> Rate, </span>
+<span id="cb25-8"><a href="#cb25-8" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">color =</span> <span class="st">"Oppo"</span>), <span class="at">size =</span> <span class="dv">2</span>) <span class="sc">+</span>       <span class="co"># Drawing a line for Oppo</span></span>
+<span id="cb25-9"><a href="#cb25-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_date</span>(<span class="at">date_labels =</span> <span class="st">"20%y-%m"</span>, <span class="at">date_breaks =</span> <span class="st">"12 months"</span>) <span class="sc">+</span> <span class="co"># Displaying date labels on the X-axis in year-month format</span></span>
+<span id="cb25-10"><a href="#cb25-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_ipsum</span>() <span class="sc">+</span>  <span class="co"># Using the 'ipsum' theme</span></span>
+<span id="cb25-11"><a href="#cb25-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"Samsung"</span> <span class="ot">=</span> <span class="st">"blue"</span>, <span class="st">"Apple"</span> <span class="ot">=</span> <span class="st">"red"</span>, <span class="co"># Setting colors for each brand's line</span></span>
+<span id="cb25-12"><a href="#cb25-12" aria-hidden="true" tabindex="-1"></a>                                <span class="st">"Xiaomi"</span> <span class="ot">=</span> <span class="st">"green"</span>, </span>
+<span id="cb25-13"><a href="#cb25-13" aria-hidden="true" tabindex="-1"></a>                                <span class="st">"Huawei"</span> <span class="ot">=</span> <span class="st">"yellow"</span>, </span>
+<span id="cb25-14"><a href="#cb25-14" aria-hidden="true" tabindex="-1"></a>                                <span class="st">"Oppo"</span> <span class="ot">=</span> <span class="st">"purple"</span>)) <span class="sc">+</span></span>
+<span id="cb25-15"><a href="#cb25-15" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb25-16"><a href="#cb25-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Brands"</span>, <span class="at">color =</span> <span class="st">"Brand"</span>) <span class="sc">+</span>                          <span class="co"># Setting titles and color labels</span></span>
+<span id="cb25-17"><a href="#cb25-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="st">"Global Market Percentages"</span>) <span class="sc">+</span>                             <span class="co"># Setting the graph title</span></span>
+<span id="cb25-18"><a href="#cb25-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">20</span>)) <span class="sc">+</span>                     <span class="co"># Setting the legend text size</span></span>
+<span id="cb25-19"><a href="#cb25-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">26</span>)) <span class="sc">+</span>                     <span class="co"># Setting the X-axis text size</span></span>
+<span id="cb25-20"><a href="#cb25-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.y =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">29</span>)) <span class="sc">+</span>                     <span class="co"># Setting the Y-axis text size</span></span>
+<span id="cb25-21"><a href="#cb25-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">color =</span> <span class="st">"#0c4da2"</span>, <span class="at">size =</span> <span class="dv">48</span>)) <span class="sc">+</span>   <span class="co"># Setting the title text color and size</span></span>
+<span id="cb25-22"><a href="#cb25-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.title.x =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">30</span>)) <span class="sc">+</span>                    <span class="co"># Setting the X-axis title size</span></span>
+<span id="cb25-23"><a href="#cb25-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.title.y =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">30</span>)) <span class="sc">+</span>                    <span class="co"># Setting the Y-axis title size</span></span>
+<span id="cb25-24"><a href="#cb25-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">panel.grid.major =</span> <span class="fu">element_line</span>(<span class="at">size =</span> <span class="fl">1.25</span>),                <span class="co"># Setting the major grid line thickness</span></span>
+<span id="cb25-25"><a href="#cb25-25" aria-hidden="true" tabindex="-1"></a>        <span class="at">panel.grid.minor =</span> <span class="fu">element_line</span>(<span class="at">size =</span> <span class="dv">1</span>))                   <span class="co"># Setting the minor grid line thickness</span></span>
+<span id="cb25-26"><a href="#cb25-26" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(compare_glob_five)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><img src="compared_graphs_final/compare_glob_five.png" class="img-fluid"></p>
+<hr>
+<hr>
+</section>
+<section id="creating-a-comparison-graph-for-multiple-brands-in-the-turkey-market" class="level1">
+<h1>Creating a Comparison Graph for Multiple Brands in the Turkey Market</h1>
+<p>In this section, we use ggplot to create a line graph that compares the performance of multiple brands (Samsung, Apple, Xiaomi, Huawei, Oppo) in the Turkey market. The similar structure was used for the other two graphs, which involve 10 brands and 15 brands, respectively.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>compare_tr_five <span class="ot">&lt;-</span> <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">data =</span> data_samsung_tr, <span class="fu">aes</span>(<span class="at">x =</span> Date, <span class="at">y =</span> Rate, <span class="at">color =</span> <span class="st">"Samsung"</span>), <span class="at">size =</span> <span class="dv">2</span>) <span class="sc">+</span>                                                          <span class="co"># Drawing a line for Samsung</span></span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">data =</span> data_apple_tr, <span class="fu">aes</span>(<span class="at">x =</span> Date, <span class="at">y =</span> Rate, <span class="at">color =</span> <span class="st">"Apple"</span>), <span class="at">size =</span> <span class="dv">2</span>) <span class="sc">+</span>                                                                 <span class="co"># Drawing a line for Apple</span></span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">data =</span> data_xiaomi_tr, <span class="fu">aes</span>(<span class="at">x =</span> Date, <span class="at">y =</span> Rate, <span class="at">color =</span> <span class="st">"Xiaomi"</span>), <span class="at">size =</span> <span class="dv">2</span>) <span class="sc">+</span>                                                               <span class="co"># Drawing a line for Xiaomi</span></span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">data =</span> data_huawei_tr, <span class="fu">aes</span>(<span class="at">x =</span> Date, <span class="at">y =</span> Rate, <span class="at">color =</span> <span class="st">"Huawei"</span>), <span class="at">size =</span> <span class="dv">2</span>) <span class="sc">+</span>                                                               <span class="co"># Drawing a line for Huawei</span></span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">data =</span> data_oppo_tr, <span class="fu">aes</span>(<span class="at">x =</span> Date, <span class="at">y =</span> Rate, </span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a>                                     <span class="at">color =</span> <span class="st">"Oppo"</span>), <span class="at">size =</span> <span class="dv">2</span>) <span class="sc">+</span>                                                                                       <span class="co"># Drawing a line for Oppo</span></span>
+<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_date</span>(<span class="at">date_labels =</span> <span class="st">"20%y-%m"</span>, <span class="at">date_breaks =</span> <span class="st">"12 months"</span>) <span class="sc">+</span> <span class="co"># Displaying date labels on the X-axis in year-month format</span></span>
+<span id="cb26-9"><a href="#cb26-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_ipsum</span>() <span class="sc">+</span>                                                    <span class="co"># Using the 'ipsum' theme</span></span>
+<span id="cb26-10"><a href="#cb26-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"Samsung"</span> <span class="ot">=</span> <span class="st">"blue"</span>, <span class="st">"Apple"</span> <span class="ot">=</span> <span class="st">"red"</span>, <span class="co"># Setting colors for each brand's line</span></span>
+<span id="cb26-11"><a href="#cb26-11" aria-hidden="true" tabindex="-1"></a>                                <span class="st">"Xiaomi"</span> <span class="ot">=</span> <span class="st">"green"</span>, </span>
+<span id="cb26-12"><a href="#cb26-12" aria-hidden="true" tabindex="-1"></a>                                <span class="st">"Huawei"</span> <span class="ot">=</span> <span class="st">"yellow"</span>, </span>
+<span id="cb26-13"><a href="#cb26-13" aria-hidden="true" tabindex="-1"></a>                                <span class="st">"Oppo"</span> <span class="ot">=</span> <span class="st">"purple"</span>)) <span class="sc">+</span></span>
+<span id="cb26-14"><a href="#cb26-14" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb26-15"><a href="#cb26-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Brands"</span>, <span class="at">color =</span> <span class="st">"Brand"</span>) <span class="sc">+</span>                          <span class="co"># Setting titles and color labels</span></span>
+<span id="cb26-16"><a href="#cb26-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="st">"Turkey Market Percentages"</span>) <span class="sc">+</span>                             <span class="co"># Setting the graph title</span></span>
+<span id="cb26-17"><a href="#cb26-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">20</span>)) <span class="sc">+</span>                     <span class="co"># Setting the legend text size</span></span>
+<span id="cb26-18"><a href="#cb26-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">26</span>)) <span class="sc">+</span>                     <span class="co"># Setting the X-axis text size</span></span>
+<span id="cb26-19"><a href="#cb26-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.y =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">29</span>)) <span class="sc">+</span>                     <span class="co"># Setting the Y-axis text size</span></span>
+<span id="cb26-20"><a href="#cb26-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">color =</span> <span class="st">"#0c4da2"</span>, <span class="at">size =</span> <span class="dv">48</span>)) <span class="sc">+</span>   <span class="co"># Setting the title text color and size</span></span>
+<span id="cb26-21"><a href="#cb26-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.title.x =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">30</span>)) <span class="sc">+</span>                    <span class="co"># Setting the X-axis title size</span></span>
+<span id="cb26-22"><a href="#cb26-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.title.y =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">30</span>)) <span class="sc">+</span>                    <span class="co"># Setting the Y-axis title size</span></span>
+<span id="cb26-23"><a href="#cb26-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">panel.grid.major =</span> <span class="fu">element_line</span>(<span class="at">size =</span> <span class="fl">1.25</span>),                <span class="co"># Setting the major grid line thickness</span></span>
+<span id="cb26-24"><a href="#cb26-24" aria-hidden="true" tabindex="-1"></a>        <span class="at">panel.grid.minor =</span> <span class="fu">element_line</span>(<span class="at">size =</span> <span class="dv">1</span>))                   <span class="co"># Setting the minor grid line thickness</span></span>
+<span id="cb26-25"><a href="#cb26-25" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(compare_tr_five)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><img src="compared_graphs_final/compare_tr_five.png" class="img-fluid"></p>
 
 
+</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
