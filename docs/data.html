@@ -534,6 +534,69 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb26-25"><a href="#cb26-25" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(compare_tr_five)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><img src="compared_graphs_final/compare_tr_five.png" class="img-fluid"></p>
+<p>Usage of AI in The Project</p>
+<p>While making this project, we used AI tools as it was encouraged by our course instructor. The AI that helped us was ChatGPT. Even though we used it, we did not blindly take the outputs from ChatGPT. This could lead us to different results, therefore we used our human intellegence to utilize the most out of it. The prompts we gave it were mostly like “How can I edit the dates and make them numeric to use it with line plots?”. We used ChatGPT to “learn” about new libraries, functions, methods, arguments to use in funcitons. The quesitons we asked to ChatGPT were demanding a specific part of the whole code. Another useful thing that ChatGPT did was correcting our small mistakes that lead our code to failure. Sometimes our intricate human intelligence is not so competent about small errors. ChatGPT came in handy at that point, for example when constructing line plots, the placement of a parenthesis was wrong and ChatGPT cleared our small mistake. That was how we utilized the most out of it. If you ask about small parts of the code and how the code actually works, it is a utterly powerful tool. However, if it is forced to do the whole project or a very complex part of the project alone, it will fail most of the time. So we need to use our human intelligence to manage artificial intelligence.</p>
+<p>Examples of the usages:</p>
+<p>1)</p>
+<p>Team member: “How do I convert something that is ‘year-month’ in the lubridate library to ‘as.date’?”</p>
+<p>ChatGPT: “You can convert a ‘year-month’ object in the lubridate library to ‘as.date’ using functions like <strong><code>ymd()</code></strong> or <strong><code>parse_date()</code></strong> to parse the year and month elements into a Date object.”</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lubridate)</span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a><span class="co"># creating year-month object exapmle</span></span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>ym <span class="ot">&lt;-</span> <span class="fu">ym</span>(<span class="st">"2023-12"</span>)</span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a><span class="co"># converting year-month to date using as_date</span></span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a>date <span class="ot">&lt;-</span> <span class="fu">as_date</span>(ym)</span>
+<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(date)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "2023-12-01"</code></pre>
+</div>
+</div>
+<p>2)</p>
+<p>Team member: “So, how can I make the x-axis appear as y-m while plotting with geom_point or geom_line?”</p>
+<p>ChatGPT: “When plotting with geom_point or geom_line, you can display the x-axis as ‘y-m’ by setting the formatting for the date axis using scale_x_date() with appropriate date labels and breaks.”</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lubridate)</span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a><span class="co"># creating data example</span></span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a>dates <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="fu">ym</span>(<span class="st">"2023-01"</span>), <span class="fu">ym</span>(<span class="st">"2023-12"</span>), <span class="at">by =</span> <span class="st">"months"</span>)</span>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a>values <span class="ot">&lt;-</span> <span class="fu">runif</span>(<span class="fu">length</span>(dates), <span class="at">min =</span> <span class="dv">50</span>, <span class="at">max =</span> <span class="dv">100</span>)</span>
+<span id="cb29-7"><a href="#cb29-7" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">Date =</span> dates, <span class="at">Value =</span> values)</span>
+<span id="cb29-8"><a href="#cb29-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-9"><a href="#cb29-9" aria-hidden="true" tabindex="-1"></a><span class="co"># creating graph with ggplot</span></span>
+<span id="cb29-10"><a href="#cb29-10" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(df, <span class="fu">aes</span>(<span class="at">x =</span> Date, <span class="at">y =</span> Value)) <span class="sc">+</span></span>
+<span id="cb29-11"><a href="#cb29-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span> <span class="co"># veya geom_line()</span></span>
+<span id="cb29-12"><a href="#cb29-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_date</span>(<span class="at">date_labels =</span> <span class="st">"%Y-%m"</span>, <span class="at">date_breaks =</span> <span class="st">"1 month"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="data_files/figure-html/unnamed-chunk-17-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>3)</p>
+<p>Team member: “How do we set colors for the legend?”</p>
+<p>ChatGPT: “When creating a plot with ggplot2 and you want to display a legend for a curve or color category, you typically use the ‘color’ or ‘group’ argument within aes(). Then, with the labs() function, you can specify the title of the legend, and with the scale_color_manual() or scale_colour_manual() function, you can determine the colors to be displayed in the legend.”</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="co"># creating data example</span></span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">123</span>)</span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>dates <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="fu">as.Date</span>(<span class="st">"2023-01-01"</span>), <span class="fu">as.Date</span>(<span class="st">"2023-12-31"</span>), <span class="at">by =</span> <span class="st">"1 month"</span>)</span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a>values1 <span class="ot">&lt;-</span> <span class="fu">sin</span>(<span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">2</span> <span class="sc">*</span> pi, <span class="at">length.out =</span> <span class="fu">length</span>(dates)))  <span class="co"># Sinüs değerleri</span></span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a>values2 <span class="ot">&lt;-</span> <span class="fu">cos</span>(<span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">2</span> <span class="sc">*</span> pi, <span class="at">length.out =</span> <span class="fu">length</span>(dates)))  <span class="co"># Kosinüs değerleri</span></span>
+<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">Date =</span> dates, <span class="at">Value1 =</span> values1, <span class="at">Value2 =</span> values2)</span>
+<span id="cb30-7"><a href="#cb30-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-8"><a href="#cb30-8" aria-hidden="true" tabindex="-1"></a><span class="co"># creating graph with ggplot</span></span>
+<span id="cb30-9"><a href="#cb30-9" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb30-10"><a href="#cb30-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-11"><a href="#cb30-11" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(df, <span class="fu">aes</span>(<span class="at">x =</span> Date)) <span class="sc">+</span></span>
+<span id="cb30-12"><a href="#cb30-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">y =</span> Value1, <span class="at">color =</span> <span class="st">"Sinüs"</span>)) <span class="sc">+</span></span>
+<span id="cb30-13"><a href="#cb30-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">y =</span> Value2, <span class="at">color =</span> <span class="st">"Kosinüs"</span>)) <span class="sc">+</span></span>
+<span id="cb30-14"><a href="#cb30-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">color =</span> <span class="st">"Eğri"</span>) <span class="sc">+</span></span>
+<span id="cb30-15"><a href="#cb30-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"Sinüs"</span> <span class="ot">=</span> <span class="st">"blue"</span>, <span class="st">"Kosinüs"</span> <span class="ot">=</span> <span class="st">"red"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="data_files/figure-html/unnamed-chunk-18-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
 
 
 </section>
