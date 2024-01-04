@@ -965,3 +965,9 @@ compare_tr_fifteen <- ggplot() +
 print(compare_tr_fifteen)
 
 
+library(readxl)
+excel_data1 <- read_excel("new_data_tr.xlsx")
+excel_data2 <- read_excel("new_data.xlsx")
+save(excel_data1, file = "new_data_tr.RData")
+save(excel_data2, file = "new_data.RData")
+
