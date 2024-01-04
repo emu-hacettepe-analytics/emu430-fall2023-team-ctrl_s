@@ -308,13 +308,19 @@ print(compare_tr_five)
 
 ![](compared_graphs_final/compare_tr_five.png)
 
-Usage of AI in The Project
+<hr>
+
+<hr>
+
+# Usage of AI in The Project
 
 While making this project, we used AI tools as it was encouraged by our course instructor. The AI that helped us was ChatGPT. Even though we used it, we did not blindly take the outputs from ChatGPT. This could lead us to different results, therefore we used our human intellegence to utilize the most out of it. The prompts we gave it were mostly like "How can I edit the dates and make them numeric to use it with line plots?". We used ChatGPT to "learn" about new libraries, functions, methods, arguments to use in funcitons. The quesitons we asked to ChatGPT were demanding a specific part of the whole code. Another useful thing that ChatGPT did was correcting our small mistakes that lead our code to failure. Sometimes our intricate human intelligence is not so competent about small errors. ChatGPT came in handy at that point, for example when constructing line plots, the placement of a parenthesis was wrong and ChatGPT cleared our small mistake. That was how we utilized the most out of it. If you ask about small parts of the code and how the code actually works, it is a utterly powerful tool. However, if it is forced to do the whole project or a very complex part of the project alone, it will fail most of the time. So we need to use our human intelligence to manage artificial intelligence.
 
 Examples of the usages:
 
-1\)
+<hr>
+
+## First EXP :
 
 Team member: "How do I convert something that is 'year-month' in the lubridate library to 'as.date'?"
 
@@ -333,7 +339,9 @@ print(date)
 
 ```
 
-2\)
+<hr>
+
+## Second EXP : 
 
 Team member: "So, how can I make the x-axis appear as y-m while plotting with geom_point or geom_line?"
 
@@ -355,7 +363,9 @@ ggplot(df, aes(x = Date, y = Value)) +
 
 ```
 
-3\)
+<hr>
+
+## Third EXP : 
 
 Team member: "How do we set colors for the legend?"
 
